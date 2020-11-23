@@ -29,7 +29,7 @@ function checkQ1() {
 
 	if (document.question1.question.value == "NREM3") {
 		document.getElementById("after_submitQ1").style.visibility = "visible";
-		document.getElementById("answerQ1").innerHTML = "No, this answer is not right! <br><br> The most characteristic features of stage III sleep are high-amplitude slow waves occupying more than 30% of the EEG tracing.";
+		document.getElementById("answerQ1").innerHTML = "No, this answer is not right! <br><br> The most characteristic features of stage III sleep are high-amplitude slow waves occupying more than 20% of the EEG tracing.";
 		document.getElementById("after_submitQ1").style.background = "red";
 		document.getElementById("answerQ1_picture").src = "EEG1_img/vertexwaves1.png";
 		document.getElementById("afterQ1_picture").innerHTML = "The EEG tracing above shows high-amplitude slow waves as marked by the red arrows. Do you see those features in the EEG tracing in the question? <br><br> Try again!";
@@ -113,7 +113,7 @@ function checkQ3() {
 
 	if (document.question3.question.value == "NREM3") {
 		document.getElementById("after_submitQ3").style.visibility = "visible";
-		document.getElementById("answerQ3").innerHTML = "No, this answer is not right! <br><br> The most characteristic features of stage III sleep are high-amplitude slow waves occupying more than 30% of the EEG tracing.";
+		document.getElementById("answerQ3").innerHTML = "No, this answer is not right! <br><br> The most characteristic features of stage III sleep are high-amplitude slow waves occupying more than 20% of the EEG tracing.";
 		document.getElementById("after_submitQ3").style.background = "red";
 		document.getElementById("answerQ3_picture").src = "EEG1_img/slowwaves1.png";
 		document.getElementById("afterQ3_picture").innerHTML = "The EEG tracing above shows high-amplitude slow waves as marked by the red arrows. Do you see those features in the EEG tracing in the question? <br><br> Try again!";
