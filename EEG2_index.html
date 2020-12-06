@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RHCREVPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8RHCREVPG');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG2 posterior dominant rhythm</title>
+<link href = "EEG2_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG2_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG2: The posterior dominant rhythm</h1>
+<p>The posterior dominant rhythm is one of the defining features of wakefulness.
+ The posterior dominant rhythm is the idle rhythm of the visual cortex. That is, 
+ it appears when the visual cortex is idle (the patient is 
+ calm and with eyes closed or not fixating in any object). Because the posterior dominant rhytm 
+ is generated in the visual cortex, it is better seen in the posterior channels of the EEG (those that include occipital electrodes). </p>
+
+
+<br>
+<br>
+<h2><b>THE "ALPHA RHYTHM"</b></h2>
+<br>
+<p>
+Many EEG readers (especially adult neurologists and adult epileptologists) refer to the posterior dominant rhythm as "alpha rhythm".
+ Why is that? Let's introduce the main frequencies that can be seen on EEG.</p>
+
+
+<br>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<center><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"><b>Gamma frequencies</b></th>
+    <th class="tg-0lax"><b>>13 Hz</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><b>Alpha frequencies</b></td>
+    <td class="tg-0lax"><b>8-13 Hz</b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><b>Theta frequencies</b></td>
+    <td class="tg-0lax"><b>4-7 Hz</b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><b>Delta frequencies</b></td>
+    <td class="tg-0lax"><b><3 Hz</b></td>
+  </tr>
+</tbody>
+</table></center>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<p>As you can see in the table above, an alpha rhythm is one in which the wave appears 8-13 times per second (8-13 Hz).
+ In adults, the normal posterior dominant rhythm has a frequency of 8-13 Hz, so that is the reason many adult
+ neurologists refer to the posterior dominant rhythm as "alpha rhythm".</p>
+
+<br>
+
+<figure>
+	<center><img id="alpha1" src="EEG2_img/alpha1.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG in an adult showing a posterior dominant rhythm.</b></figcaption></center>
+</figure>
+
+<br>
+
+<figure>
+	<center><img id="alpha2" src="EEG2_img/alpha2.png" width=1200px heigth=1000px>
+	<figcaption><b>Detail of the image above.</b>The posterior dominant rhythm in this patient is 8 Hz, therefore its frequency is in the alpha frequency.</figcaption></center>
+</figure>
+
+
+<br>
+
+<figure>
+	<center><img id="alpha3" src="EEG2_img/alpha3.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG in an adult showing a posterior dominant rhythm.</b></figcaption></center>
+</figure>
+
+<br>
+
+<figure>
+	<center><img id="alpha4" src="EEG2_img/alpha4.png" width=1200px heigth=1000px>
+	<figcaption><b>Detail of the image above.</b>The posterior dominant rhythm in this patient is 10 Hz, therefore its frequency is in the alpha frequency.</figcaption></center>
+</figure>
+
+
+<br>
+<p>So far, it appears that "alpha rhythm" would be an appropriate term to refer to the posterior dominant rhythm.</p>
+<br>
+
+<form id="question1" name="question1">
+<p><b>Q1. You are reading the EEG below from an adult patient. What is the frequency of the posterior dominant rhythm?</b></p>
+<figure>
+	<img id="Q1_1" src="EEG2_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<input type="radio" id="q1" name="question" value="a"> 4 Hz<br>
+<input type="radio" id="q1" name="question" value="b"> 6 Hz<br>
+<input type="radio" id="q1" name="question" value="c"> 8 Hz<br>
+<input type="radio" id="q1" name="question" value="d"> 10 Hz<br>
+<input id="buttonQ1" type="button" value="Done!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>Q2. Based on your response to question 1 and on the table of EEG frequencies, how would you call the posterior dominant rhythm of the patient in question 1?</b></p>
+<br>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<center><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"><b>Gamma frequencies</b></th>
+    <th class="tg-0lax"><b>>13 Hz</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><b>Alpha frequencies</b></td>
+    <td class="tg-0lax"><b>8-13 Hz</b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><b>Theta frequencies</b></td>
+    <td class="tg-0lax"><b>4-7 Hz</b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><b>Delta frequencies</b></td>
+    <td class="tg-0lax"><b><3 Hz</b></td>
+  </tr>
+</tbody>
+</table></center>
+<br clear="all" />
+<input type="radio" id="q2" name="question" value="a"> Slow alpha rhythm<br>
+<input type="radio" id="q2" name="question" value="b"> Subalpha rhythm<br>
+<input type="radio" id="q2" name="question" value="c"> Theta rhythm<br>
+<input type="radio" id="q2" name="question" value="d"> I would not give the posterior dominant rhythm the name of any of the EEG frequencies<br>
+<input type="radio" id="q2" name="question" value="e"> Alpha rhythm<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>WHY THE POSTERIOR DOMINANT RHYTHM SHOULD NOT BE NAMED "ALPHA RHYTHM"</b></h2>
+<br>
+<p>The posterior dominant rhythm should not be termed "alpha rhythm" for two main reasons:
+<br>
+1. Even in adults (where the normal posterior dominant rhythm is in the alpha frequency), a slow (abnormal) posterior dominant rhythm may be
+ slower than 8 Hz and, therefore, in the theta or even delta frequencies.
+<br>
+2. The normal posterior dominant rhythm frequency increases with age in children until it reaches the adult normal frequencies.
+</p>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>THE EVOLUTION OF THE POSTERIOR DOMINANT RHYTHM AT DIFFERENT AGES</b></h2>
+<br>
+
+
+<p>The posterior dominant rhythm evolves during the first years of life until reaching its adult form.</p>
+
+
+
+<br>
+<figure>
+	<center><img id="4months1" src="EEG2_img/4months1.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG in a 4 month-old infant.</b>The posterior dominant rhythm in this patient is approximately 4-5 Hz and this is a normal frequency for age.</figcaption></center>
+</figure>
+
+<br>
+
+
+<br>
+<figure>
+	<center><img id="13months1" src="EEG2_img/13months1.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG in a 13 month-old child.</b>The posterior dominant rhythm in this patient is approximately 6 Hz and this is a normal frequency for age.</figcaption></center>
+</figure>
+
+<br>
+
+
+<br>
+<figure>
+	<center><img id="5years1" src="EEG2_img/5years1.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG in a 5 year-old child.</b>The posterior dominant rhythm in this patient is approximately 7 Hz and this is a normal frequency for age.</figcaption></center>
+</figure>
+
+<br>
+
+
+<br>
+<figure>
+	<center><img id="10years1" src="EEG2_img/10years1.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG in a 10 year-old child.</b>The posterior dominant rhythm in this patient is approximately 8 Hz and this is a normal frequency for age.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<form id="question3" name="question3">
+<p><b>Q3. You are reading an EEG and find that the posterior dominant rhythm is 5 Hz. How would you classify that posterior dominant rhythm?</b></p>
+<br>
+<input type="radio" id="q3" name="question" value="a"> Abnormal: slow posterior dominant rhythm<br>
+<input type="radio" id="q3" name="question" value="b"> Abnormal: Fast posterior dominant rythm<br>
+<input type="radio" id="q3" name="question" value="c"> Normal: appropriate posterior dominant rhythm<br>
+<input type="radio" id="q3" name="question" value="d"> I would need more information to decide<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<p>The following table summarizes the frequencies below which a posterior dominant rhythm is abnormal for age.
+ These are the lower limits of normal. Typically, these frequencies are achieved at a younger age than the "limit of normal" age.
+ That is, it is not unusual to find an 8 Hz posterior dominant rhythm in a 1 year-old child, 
+ or a 10 Hz posterior dominant rhythm in a 6 year-old child (much faster than the lower limit of normal). 
+ However, to call a posterior dominant rhythm slow for age, it should be below the lower limit of normal for age. 
+ For example, a 6 year-old with a 6 Hz posterior dominant rhythm is slower than most other children at this age,
+ but still within normal limits for age. </p>
+
+
+<br>
+<br>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<center><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"><b>1 year of age</b></th>
+    <th class="tg-0lax"><b>Abnormal if <5 Hz</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><b>3 years of age</b></td>
+    <td class="tg-0lax"><b>Abnormal if <6 Hz</b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><b>6 years of age</b></td>
+    <td class="tg-0lax"><b>Abnormal if <7 Hz</b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><b>8 years of age or older</b></td>
+    <td class="tg-0lax"><b>Abnormal if <8 Hz</b></td>
+  </tr>
+</tbody>
+</table></center>
+
+
+
+
+<h2><b>AMPLITUDE</b></h2>
+<br>
+
+
+<p>The normal posterior dominant rhythm has a voltage between 20 microvolts and 120 microvolts.
+ Younger children have high-voltage posterior dominant rhythm (around 80-120 microvolts) and this voltage 
+ gets progressively smaller with age until reaching values around 20-60 microvolts in young adults. 
+ As people age, their posterior dominant rhythm becomes of lower amplitude. </p>
+
+
+<br>
+
+<figure>
+	<center><img id="60HzPDR" src="EEG2_img/60HzPDR.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG in a 3 month-old infant showing a posterior dominant rhythm 
+ with a frequency of 4-5 Hz and an amplitude of approximately 60 microvolts.</b></figcaption></center>
+</figure>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+
+<figure>
+	<center><img id="40HzPDR" src="EEG2_img/40HzPDR.png" width=1200px heigth=1000px>
+	<figcaption><b>EEG in a 9 year-old child showing a posterior dominant rhythm 
+ with a frequency of 8 Hz and an amplitude of approximately 40 microvolts.</b></figcaption></center>
+</figure>
+
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>SYMMETRY</b></h2>
+<br>
+
+
+<p>The posterior dominant rhythm should be symmetric. It is normal and acceptable that sometimes the posterior
+ dominant rhythm would appear better formed on one hemisphere than in the other hemisphere, 
+ but these differences should even out in the long run.<br>
+ If the posterior dominant rhythm is persistently asymmetric, it should be considered an abnormality.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>Q4. Check all the correct statements regarding the EEG below:</b></p>
+<figure>
+	<img id="Q4_1" src="EEG2_img/Q4.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q4a" name="question" value="a"> The posterior dominant rhythm is better seen on the right hemisphere<br>
+<input type="checkbox" id="q4b" name="question" value="b"> The posterior dominant rhythm is better seen on the left hemisphere<br>
+<input type="checkbox" id="q4c" name="question" value="c"> The posterior dominant rhythm is symmetric<br>
+<input type="checkbox" id="q4d" name="question" value="d"> An assymetry in the posterior dominant rhythm can be normal for a brief period if it evens out in the overall EEG<br>
+<input type="checkbox" id="q4e" name="question" value="e"> An assymmetry in the posterior dominant rhythm can be normal even if it persists for most of the EEG<br>
+<input id="buttonQ4" type="button" value="Done!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<figure>
+<img id="answerQ4_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question5" name="question5">
+<p><b>Q5. Check all the correct statements regarding symmetry of the posterior dominant rhythm:</b></p>
+<br>
+<input type="checkbox" id="q5a" name="question" value="a"> The amplitude of the posterior dominant rhythm has to be exactly the same between the right and left hemispheres <br>
+<input type="checkbox" id="q5b" name="question" value="b"> The amplitude of the posterior dominant rhythm can be approximately 2 times higher in one hemisphere than the other and still be normal<br>
+<input type="checkbox" id="q5c" name="question" value="c"> Normally, the amplitude of the posterior dominant rhythm is a little bit higher in the right hemisphere, so if the higher amplitude is on the right hemisphere, it has to be consistently more than 3 times higher on the right hemisphere to be abnormal<br>
+<input type="checkbox" id="q5d" name="question" value="d"> An assymetry in the amplitude of the posterior dominant rhythm always marks a structural abnormality in that part of the brain (tumor, stroke, etc.)<br>
+<input id="buttonQ5" type="button" value="Done!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<br>
+<p id = "afterQ5_picture"></p>
+</div>
+
+
+<br clear="all" />
+<br clear="all" />
+<br>
+<br>
+
+
+<br>
+<br>
+
+
+<form id="question6" name="question6">
+<p><b>Q6. You are reading an EEG and find that the best portion of to detect the posterior dominant rhythm is the image below. 
+ What is the frequency of the posterior dominant rhythm and would this frequency be normal or abnormal?</b></p>
+<figure>
+	<img id="Q6_1" src="EEG2_img/Q6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q6" name="question" value="a"> 4 Hz: abnormal<br>
+<input type="radio" id="q6" name="question" value="b"> 6 Hz: abnormal<br>
+<input type="radio" id="q6" name="question" value="c"> 6 Hz: normal<br>
+<input type="radio" id="q6" name="question" value="d"> 4 Hz: I would need more information to decide if this is normal or abnormal<br>
+<input id="buttonQ6" type="button" value="Done!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+<br>
+<figure>
+<img id="answerQ6_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ6_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+<form id="question7" name="question7">
+<p><b>Q7. Select the correct option below:</b></p>
+<figure>
+	<img id="Q7_1" src="EEG2_img/Q7.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q7" name="question" value="a"> This EEG portion shows a symmetric posterior dominant rhythm in both hemispheres<br>
+<input type="radio" id="q7" name="question" value="b"> This EEG portion shows an asymmetric posterior dominant rhythm. I will have to see if this persists or evens out in the whole EEG<br>
+<input type="radio" id="q7" name="question" value="c"> This EEG portion shows an asymmetric posterior dominant rhythm. This is always abnormal <br>
+<input type="radio" id="q7" name="question" value="d"> This EEG portion does not show any posterior dominant rhythm<br>
+<input id="buttonQ7" type="button" value="Done!" onclick="checkQ7();">
+</form>
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+<br>
+<figure>
+<img id="answerQ7_picture">
+</figure>
+<br clear="all" />
+<figure>
+<img id="answerQ7_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ7_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+
+<form id="question8" name="question8">
+<p><b>Q8. What is the frequency of the posterior rhythm in the figure below?</b></p>
+<figure>
+	<img id="Q8_1" src="EEG2_img/Q8.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q8" name="question" value="a"> 4 Hz<br>
+<input type="radio" id="q8" name="question" value="b"> 6 Hz<br>
+<input type="radio" id="q8" name="question" value="c"> 10 Hz<br>
+<input type="radio" id="q8" name="question" value="d"> I do not see any posterior dominant rhythm in this portion of the EEG<br>
+<input id="buttonQ8" type="button" value="Done!" onclick="checkQ8();">
+</form>
+
+<div id="after_submitQ8">
+<p id="answerQ8"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2><b>SUMMARY</b></h2>
+<p><b>After reviewing this chapter, you are able to identify the most important characteristics of the posterior dominant rhythm.<br>
+The posterior dominant rhythm is one of the main rhythms of wakefulness and occurs when the patient is calm with eyes closed. 
+The frequency of the posterior dominant rhythm varies with age.</b></p>
+<br>
+<br>
+<br>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<center><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"><b>1 year of age</b></th>
+    <th class="tg-0lax"><b>Abnormal if <5 Hz</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><b>3 years of age</b></td>
+    <td class="tg-0lax"><b>Abnormal if <6 Hz</b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><b>6 years of age</b></td>
+    <td class="tg-0lax"><b>Abnormal if <7 Hz</b></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><b>8 years of age or older</b></td>
+    <td class="tg-0lax"><b>Abnormal if <8 Hz</b></td>
+  </tr>
+</tbody>
+</table></center>
+
+
+<br>
+<br>
+
+
+<p><b>The posterior dominant rhythm has to be approximately symmetric between the right and left hemispheres.
+ If there is a persistent and marked asymmetry, this can represent a structural lesion or a functional anomaly.</b></p>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
