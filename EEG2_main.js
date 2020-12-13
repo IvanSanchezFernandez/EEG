@@ -278,7 +278,7 @@ function checkQ8() {
 
 }
 
-	if (document.question6.question.value == "d") {
+	if (document.question8.question.value == "d") {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
 		document.getElementById("answerQ8").innerHTML = "Correct! <br><br> This EEG tracing shows vertex waves and sleep spindles, belongs to stage II of sleep and no posterior dominant rhythm is going to be found here.";
 		document.getElementById("after_submitQ8").style.background = "lightgreen";
@@ -288,4 +288,54 @@ function checkQ8() {
 }
 
 }
+
+
+
+
+
+
+
+
+function checkQ9() {
+
+	if (document.question9.question.value == "a") {
+		document.getElementById("after_submitQ9").style.visibility = "visible";
+		document.getElementById("answerQ9").innerHTML = "Correct!<br><br>";
+		document.getElementById("after_submitQ9").style.background = "lightgreen";
+		document.getElementById("answerQ9_picture").src = "";
+		document.getElementById("afterQ9_picture").innerHTML = "Exactly! The posterior dominant rhythm appears during wakefulness, when the patient is relaxed, with eyes closed or not fixating on anything. Therefore, even during wakefulness the posterior dominant rhythm may not appear if these conditions are not met.<br><br> Great job!";
+
+}
+
+	if (document.question9.question.value == "b") {
+		document.getElementById("after_submitQ9").style.visibility = "visible";
+		document.getElementById("answerQ9").innerHTML = "Incorrect! <br><br>";
+		document.getElementById("after_submitQ9").style.background = "red";
+		document.getElementById("answerQ9_picture").src = "";
+		document.getElementById("afterQ9_picture").innerHTML = "Although the posterior dominant rhythm appears in most EEGs (largely thanks to technicians who ask the patient to close their eyes and relax), it may not appear and that does not necessarily make the EEG abnormal.<br><br> Try again!";
+
+}
+
+	if (document.question9.question.value == "c") {
+		document.getElementById("after_submitQ9").style.visibility = "visible";
+		document.getElementById("answerQ9").innerHTML = "Incorrect! <br><br>";
+		document.getElementById("after_submitQ9").style.background = "red";
+		document.getElementById("answerQ9_picture").src = "";
+		document.getElementById("afterQ9_picture").innerHTML = "No. The posterior dominant rhythm is not present during sleep.<br><br> Try again!";
+
+}
+
+	if (document.question9.question.value == "d") {
+		document.getElementById("after_submitQ9").style.visibility = "visible";
+		document.getElementById("answerQ9").innerHTML = "No! <br><br>";
+		document.getElementById("after_submitQ9").style.background = "red";
+		document.getElementById("answerQ9_picture").src = "";
+		document.getElementById("afterQ9_picture").innerHTML = "The posterior dominant rhythm does not appear at any particular time after the onset of wakefulness. Contrary to some stages of sleep (which appear after some time of falling sleep), the posterior dominant rhythm may appear at any moment during wakefulness. <br><br> Try again!";
+
+}
+
+}
+
+
+
 
