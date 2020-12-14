@@ -200,7 +200,7 @@ function checkQ6() {
 
 function checkQ7() {
 
-	if (document.question6.question.value == "a") {
+	if (document.question7.question.value == "a") {
 		document.getElementById("after_submitQ7").style.visibility = "visible";
 		document.getElementById("answerQ7").innerHTML = "No. Sorry, this answer is not correct!";
 		document.getElementById("after_submitQ7").style.background = "red";
@@ -213,14 +213,14 @@ function checkQ7() {
 	if (document.question7.question.value == "b") {
 		document.getElementById("after_submitQ7").style.visibility = "visible";
 		document.getElementById("answerQ7").innerHTML = "Correct! <br><br> This EEG has a posterior dominant rhythm that is slightly asymmetric.";
-		document.getElementById("after_submitQ7").style.background = "red";
+		document.getElementById("after_submitQ7").style.background = "lightgreen";
 		document.getElementById("answerQ7_picture").src = "EEG2_img/Q7.2.png";
                 document.getElementById("answerQ7_picture2").src = "EEG2_img/Q7.3.png";
 		document.getElementById("afterQ7_picture").innerHTML = "The voltage is somewhat higher on the right hemisphere (45 microvolts versus 33 microvolts). In these cases the posterior dominant rhythm is abnormal if more than 3 times higher voltage on the right hemisphere compared to the left hemisphere. In case that the higher voltage is on the left hemisphere, then it is abnormal if the posterior dominant rhythm is more than two times higher amplitude on the left than on the right hemisphere. In all cases, this has to be determined over the whole EEG, not only on a brief portion of it. <br><br> Great job!";
 
 }
 
-	if (document.question6.question.value == "c") {
+	if (document.question7.question.value == "c") {
 		document.getElementById("after_submitQ7").style.visibility = "visible";
 		document.getElementById("answerQ7").innerHTML = "No, sorry! <br><br> The posterior dominant rhythm is slightly asymmetric, but this is frequently normal.";
 		document.getElementById("after_submitQ7").style.background = "red";
@@ -233,7 +233,7 @@ function checkQ7() {
 	if (document.question7.question.value == "d") {
 		document.getElementById("after_submitQ7").style.visibility = "visible";
 		document.getElementById("answerQ7").innerHTML = "Incorrect! <br><br> There is a posterior dominant rhythm clearly seen on the right and the left hemisphere.";
-		document.getElementById("after_submitQ7").style.background = "lightgreen";
+		document.getElementById("after_submitQ7").style.background = "red";
 		document.getElementById("answerQ7_picture").src = "EEG2_img/Q7.2.png";
                 document.getElementById("answerQ7_picture2").src = "EEG2_img/Q7.3.png";
 		document.getElementById("afterQ7_picture").innerHTML = "<br><br>Try again";
@@ -255,7 +255,6 @@ function checkQ8() {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
 		document.getElementById("answerQ8").innerHTML = "No.<br><br>";
 		document.getElementById("after_submitQ8").style.background = "red";
-		document.getElementById("answerQ8_picture").src = "";
 		document.getElementById("afterQ8_picture").innerHTML = "Where and when in an EEG do you find a posterior dominant rhythm?<br><br> Try again!";
 
 }
@@ -264,7 +263,6 @@ function checkQ8() {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
 		document.getElementById("answerQ8").innerHTML = "Incorrect! <br><br>";
 		document.getElementById("after_submitQ8").style.background = "red";
-		document.getElementById("answerQ8_picture").src = "";
 		document.getElementById("afterQ8_picture").innerHTML = "Where and when in an EEG do you find a posterior dominant rhythm?<br><br> Try again!";
 
 }
@@ -273,7 +271,6 @@ function checkQ8() {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
 		document.getElementById("answerQ8").innerHTML = "Incorrect! <br><br>";
 		document.getElementById("after_submitQ8").style.background = "red";
-		document.getElementById("answerQ8_picture").src = "";
 		document.getElementById("afterQ8_picture").innerHTML = "Where and when in an EEG do you find a posterior dominant rhythm?<br><br> Try again!";
 
 }
@@ -282,7 +279,6 @@ function checkQ8() {
 		document.getElementById("after_submitQ8").style.visibility = "visible";
 		document.getElementById("answerQ8").innerHTML = "Correct! <br><br> This EEG tracing shows vertex waves and sleep spindles, belongs to stage II of sleep and no posterior dominant rhythm is going to be found here.";
 		document.getElementById("after_submitQ8").style.background = "lightgreen";
-		document.getElementById("answerQ8_picture").src = "";
 		document.getElementById("afterQ8_picture").innerHTML = "The posterior dominant rhythm appears in an awake patient with eyes closed or non-fixating on anything in particular. Do not look for a posterior dominant rhythm during sleep, in a patient in coma, or in a patient who is awake but not relaxed. <br><br> Great job!";
 
 }
@@ -302,7 +298,6 @@ function checkQ9() {
 		document.getElementById("after_submitQ9").style.visibility = "visible";
 		document.getElementById("answerQ9").innerHTML = "Correct!<br><br>";
 		document.getElementById("after_submitQ9").style.background = "lightgreen";
-		document.getElementById("answerQ9_picture").src = "";
 		document.getElementById("afterQ9_picture").innerHTML = "Exactly! The posterior dominant rhythm appears during wakefulness, when the patient is relaxed, with eyes closed or not fixating on anything. Therefore, even during wakefulness the posterior dominant rhythm may not appear if these conditions are not met.<br><br> Great job!";
 
 }
@@ -311,7 +306,6 @@ function checkQ9() {
 		document.getElementById("after_submitQ9").style.visibility = "visible";
 		document.getElementById("answerQ9").innerHTML = "Incorrect! <br><br>";
 		document.getElementById("after_submitQ9").style.background = "red";
-		document.getElementById("answerQ9_picture").src = "";
 		document.getElementById("afterQ9_picture").innerHTML = "Although the posterior dominant rhythm appears in most EEGs (largely thanks to technicians who ask the patient to close their eyes and relax), it may not appear and that does not necessarily make the EEG abnormal.<br><br> Try again!";
 
 }
@@ -320,7 +314,6 @@ function checkQ9() {
 		document.getElementById("after_submitQ9").style.visibility = "visible";
 		document.getElementById("answerQ9").innerHTML = "Incorrect! <br><br>";
 		document.getElementById("after_submitQ9").style.background = "red";
-		document.getElementById("answerQ9_picture").src = "";
 		document.getElementById("afterQ9_picture").innerHTML = "No. The posterior dominant rhythm is not present during sleep.<br><br> Try again!";
 
 }
@@ -329,7 +322,6 @@ function checkQ9() {
 		document.getElementById("after_submitQ9").style.visibility = "visible";
 		document.getElementById("answerQ9").innerHTML = "No! <br><br>";
 		document.getElementById("after_submitQ9").style.background = "red";
-		document.getElementById("answerQ9_picture").src = "";
 		document.getElementById("afterQ9_picture").innerHTML = "The posterior dominant rhythm does not appear at any particular time after the onset of wakefulness. Contrary to some stages of sleep (which appear after some time of falling sleep), the posterior dominant rhythm may appear at any moment during wakefulness. <br><br> Try again!";
 
 }
