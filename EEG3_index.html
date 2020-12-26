@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RHCREVPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8RHCREVPG');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG3 sleep</title>
+<link href = "EEG3_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG3_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG3: Sleep features</h1>
+<p>Sleep and the transitions from wakefulness to sleep and from sleep to wakefulness are crucial parts of an EEG.
+ When an EEG does not contain sleep, it is considered a somewhat incomplete test. So much so that some centers repeat the EEG
+ if sleep was not captured in the initial EEG.<br><br>
+Epileptiform abnormalities tend to appear more frequently during sleep or in the wake-sleep transitions. 
+ Abnormalities that are not clearly seen during wakefulness because they are buried in muscle artifact 
+ during wakefulness may be seen more clearly during sleep. Infantile spasms tend to occur more frequently when the infant wakes up from sleep.<br><br>
+ In short, an EEG without sleep is almost like a car with no wheels. Let's get more familiar with sleep then.</p>
+
+
+<br>
+<br>
+<h2><b>FALLING ASLEEP</b></h2>
+<br>
+<p>
+Most people do not fall asleep abruptly. There is a progressive transition from wakefulness to sleep in which light sleep
+ evolves into a deeper and deeper sleep.</p>
+
+<br>
+
+<figure>
+	<center><img id="transitionwakesleep" src="EEG3_img/transitionwakesleep.png" width=1200px heigth=1000px>
+	<figcaption><b>Transition from wakefulness to sleep.</b></figcaption></center>
+</figure>
+
+<br>
+
+
+<br>
+
+<figure>
+	<center><img id="transitionwakesleepmarkers" src="EEG3_img/transitionwakesleepmarkers.png" width=1200px heigth=1000px>
+	<figcaption><b>Transition from wakefulness to sleep (same EEG segment as above).</b> The initial part of this EEG segment 
+ shows a well-formed posterior dominant rhythm. Towards the center of the image the posterior dominant rhythm becomes less apparent. 
+ Towards the end of this EEG segment there are some rudimentary vertex waves.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="phaseI" src="EEG3_img/phaseI.png" width=1200px heigth=1000px>
+	<figcaption><b>Drowsiness (stage I sleep).</b>The following page in the EEG shows that the patient is fully into phase I sleep
+ as shown by the well-formed vertex sharp waves which are apparent in the midline and biparasagittal regions.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="phaseI" src="EEG3_img/channels.png" width=1200px heigth=1000px>
+	<figcaption>This is a good opportunity to introduce the location of the channels in the EEG. Roughly, the channels
+ in an anterior-posterior bipolar montage (one of the most popular montages in EEG) go anteriorly to posteriorly in 5 groups: 
+ left temporal, left parasagittal, midline, right parasagittal, and right temporal. Each of these 5 groups are represented by
+ the purple ovals in the image. We will explain montages in more detail in another post, but this is a good place to get familiar
+ with roughly what part of the head each area of the EEG is looking at.</figcaption></center>
+</figure>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<figure>
+	<center><img id="lateraleyemovements" src="EEG3_img/lateraleyemovements.png" width=1200px heigth=1000px>
+	<figcaption>Lateral slow movements of the eyes (seen as shown in the red rectangles above) are one of the most characteristic 
+ features of drowsiness. However, frequently they are not present. Frequently, a particular stage of the wake-sleep cycle can be
+ identified even if not all typical features are present.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<figure>
+	<center><img id="drowsiness" src="EEG3_img/drowsiness.png" width=1200px heigth=1000px>
+	<figcaption>For example, this EEG segment occurs during drowsiness (do you see the vertex waves?), but there are no slow lateral movements of the eyes.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question1" name="question1">
+<p><b>Q1. In the transition from wakefulness to sleep, select all correct anwers:</b></p>
+<figure>
+	<img id="Q1_1" src="EEG3_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q1a" name="question" value="a"> The posterior dominant rhythm remains in drowsiness and persists until stage II sleep<br>
+<input type="checkbox" id="q1b" name="question" value="b"> During drowsiness (stage I sleep) there are rapid eye movements<br>
+<input type="checkbox" id="q1c" name="question" value="c"> Vertex waves are typically symmetric and most prominent in the midline and parasagittal regions<br>
+<input type="checkbox" id="q1d" name="question" value="d"> High-amplitude diffuse slow waves are the defining feature of drowsiness (stage I)<br>
+<input type="checkbox" id="q1e" name="question" value="e"> Epileptiform activity tends to resolve during drowsiness (stage I) and reappear in stage II sleep<br>
+<input id="buttonQ1" type="button" value="Done!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ1_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>Q2. True or false? Once the patient enters drowsiness (stage I sleep), the EEG evolves progressively into deeper and deeper
+ stages of sleep with no returning to prior stages in the wake-sleep cycle:</b></p>
+<br>
+<input type="radio" id="q2" name="question" value="a"> True<br>
+<input type="radio" id="q2" name="question" value="b"> False<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<figure>
+<img id="answerQ2_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<h2><b>DEEPER SLEEP</b></h2>
+<br>
+<p>If the patient remains asleep, there is a progressive transition to deeper stages of sleep. These are Stage II sleep (NREM2) and Stage III (NREM3).</p>
+<br>
+
+
+<figure>
+	<center><img id="spindles1" src="EEG3_img/spindles1.png" width=1200px heigth=1000px>
+	<figcaption><b>Stage II sleep.</b> The EEG segment above shows the most characteristic feature of stage II sleep: sleep spindles.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+<figure>
+	<center><img id="spindles2" src="EEG3_img/spindles2.png" width=1200px heigth=1000px>
+	<figcaption><b>Sleep spindles.</b> Sleep spindles are characterized by their shape (fusiform), their frequency (around 14 Hz), and their location
+ (central regions).</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+
+
+<figure>
+	<center><img id="spindles3" src="EEG3_img/spindles3.png" width=1200px heigth=1000px>
+	<figcaption><b>Sleep spindles.</b> Sleep spindles can look different in different patients, but are generally symmetrical, located in the central regions,
+ and around 14 Hz in frequency.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+
+
+
+
+<form id="question3" name="question3">
+<p><b>Q3. While reading an EEG you find the following segment. You conclude:</b></p>
+<figure>
+	<img id="Q3_1" src="EEG3_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q3a" name="question" value="a"> There are no sleep spindles in this EEG segment<br>
+<input type="checkbox" id="q3b" name="question" value="b"> There are sleep spindles in this EEG segment, but only in the midline and right parasagittal region<br>
+<input type="checkbox" id="q3c" name="question" value="c"> It is particurlarly important to known the age of this patient<br>
+<input type="checkbox" id="q3d" name="question" value="d"> Asymmetric spindles are always abnormal<br>
+<input type="checkbox" id="q3e" name="question" value="e"> The elements found in this EEG segment are way too long to be sleep spindles<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ3_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+<br clear="all" />
+<br>
+<br>
+
+
+
+
+
+<br>
+<p>As the patient gets into deeper sleep, vertex waves progressively dissappear, sleep spindles become less prominent, and
+ the EEG tracing slows down and increases in amplitude. Stage III (NREM3) is characterized by high-amplitude slow waves
+ occupying at least 20% of the EEG tracing.</p>
+<br>
+<br>
+
+
+<br>
+<br>
+
+<figure>
+	<center><img id="stageIII1" src="EEG3_img/stageIII1.png" width=1200px heigth=1000px>
+	<figcaption><b>Stage III sleep.</b> The predominant frequency in stage III sleep is delta (3 Hz or lower) and the 
+ amplitude of the waves is quite high (see the scale legend at 400 uV and compare the amplitude of this EEG portion with 
+ the EEGs from prior stages of sleep).</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>Q4. While reading an EEG you find the following segment. You conclude:</b></p>
+<figure>
+	<img id="Q4_1" src="EEG3_img/Q4.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q4a" name="question" value="a"> This segment belongs to stage III sleep<br>
+<input type="checkbox" id="q4b" name="question" value="b"> There are sleep spindles in this EEG segment, therefore, it cannot be stage III sleep. It is stage II sleep<br>
+<input type="checkbox" id="q4c" name="question" value="c"> There should be slow lateral eye movements to classify a segment as stage III sleep<br>
+<input type="checkbox" id="q4d" name="question" value="d"> The posterior dominant rhythm reappears in stage III sleep<br>
+<input type="checkbox" id="q4e" name="question" value="e"> The asymmetry in the sleep spindles suggests a structural abnormality in this patient<br>
+<input id="buttonQ4" type="button" value="Done!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<figure>
+<img id="answerQ4_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ4_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<br>
+<br>
+<h2><b>TRANSITIONS</b></h2>
+<br>
+<p>It is very frequent (and normal) to have brief awakenings during sleep.</p>
+<br>
+
+<figure>
+	<center><img id="arousal1" src="EEG3_img/arousal1.png" width=1200px heigth=1000px>
+	<figcaption>On the initial part of this EEG tracing there are sleep spindles and towards the end
+ there are hypersynchronous high-amplitude waves, and some muscle artifact can be seen.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+
+<figure>
+	<center><img id="arousal2" src="EEG3_img/arousal2.png" width=1200px heigth=1000px>
+	<figcaption>The next page in the EEG shows better formed hypersynchrony and 
+ more muscle artifact.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+
+<figure>
+	<center><img id="arousal3" src="EEG3_img/arousal3.png" width=1200px heigth=1000px>
+	<figcaption>The next page in the EEG shows vertex waves and then sleep spindles towards
+ the end of the page.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+
+<br>
+<p>The transitions between wake and sleep stages (and viceversa) can look unusual with high-voltage
+ hypersynchronic waves. Even if they look unusual, they are completely normal during transitions.</p>
+<br>
+
+
+<br>
+<figure>
+	<center><img id="transition1" src="EEG3_img/transition1.png" width=1200px heigth=1000px>
+	<figcaption>Hypersynchrony is seen towards the end of this EEG tracing.</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+
+
+
+<figure>
+	<center><img id="transition2" src="EEG3_img/transition2.png" width=1200px heigth=1000px>
+	<figcaption>Hypersynchrony continues in the next EEG page followed by muscle and movement
+ artifact (arousal).</figcaption></center>
+</figure>
+
+<br clear="all" />
+<br>
+<br>
+
+<h2><b>SUMMARY</b></h2>
+<p><b>At this point you are able to recognize the main normal features and stages of an EEG.
+ You are ready to move one step ahead. Things will get more interesting soon.<br>
+
+
+
+</body>
+
+</html>
