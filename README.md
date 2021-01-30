@@ -1,0 +1,4 @@
+# EEG
+---
+permalink: /index.html
+---
