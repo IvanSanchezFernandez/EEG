@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RHCREVPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8RHCREVPG');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG5 types of epileptiform activity</title>
+<link href = "EEG5_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG5_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG5: Types of epileptiform activity</h1>
+<p>In this post you will learn the different types of epileptiform discharges.</p>
+
+
+<br>
+<br>
+
+
+
+
+<form id="question1" name="question1">
+<p><b>Q1. Select all true statements about epileptiform activity:</b></p>
+<figure>
+	<img id="Q1_1" src="EEG5_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<input type="checkbox" id="q1a" name="question" value="a"> The sharper the epileptiform activity, the more likely it is that the patient has epilepsy<br>
+<input type="checkbox" id="q1b" name="question" value="b"> The appearance of any type of epileptiform activity means more or less the same: a predisposition to have seizures<br>
+<input type="checkbox" id="q1c" name="question" value="c"> Some types of epileptiform activity appear more commonly in some types of epileptic syndromes<br>
+<input type="checkbox" id="q1d" name="question" value="d"> Spikes (rather than sharp waves) mark a more severe epilepsy<br>
+<input type="checkbox" id="q1e" name="question" value="e"> Any type of epileptiform discharge can appear as either focal or generalized<br>
+<input id="buttonQ1" type="button" value="Done!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ1_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2><b>SPIKES</b></h2>
+<br>
+<p>A spike is a type of epileptiform discharge that has a duration of fewer than 70 milliseconds.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="spikes1" src="EEG5_img/spikes1.png" width=1200px heigth=1000px>
+	<figcaption>This is a spike at T8/P4 (in the inferior part of the image). It is a sharply-contoured
+ EEG element which breaks the rhythm, and has a field which makes anatomical sense. It is a spike because it is narrow
+ (shorter than 70 milliseconds).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2><b>SHARP WAVES</b></h2>
+<br>
+<p>A sharp wave is similar to a spike, but wider, with a duration between 70 and 200 milliseconds.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="sharpwaves1" src="EEG5_img/sharpwaves1.png" width=1200px heigth=1000px>
+	<figcaption>This epileptiform discharge at P4/P8 is wider than 70 milliseconds, but narrower than
+ 200 milliseconds: it is a sharp wave. For reference, the separation between green vertical lines
+ is 200 milliseconds.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="sharpwaves2" src="EEG5_img/sharpwaves2.png" width=1200px heigth=1000px>
+	<figcaption>There are multiple sharp waves in this EEG segment, with maximum at C3/P3, P7, and C4/P4.</figcaption></center>
+</figure>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>Q2. While reading the EEG below a colleague asks you to precisely measure the duration of each epileptiform
+ discharge to figure out if it is a spike (shorter than 70 milliseconds) or a sharp wave (duration between 70 and
+ 200 milliseconds). Your response should be:</b></p>
+<figure>
+	<img id="Q2_1" src="EEG5_img/Q2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q2" name="question" value="a"> Definitively! I will measure the duration of every epileptiform discharge to see which one is a spike and which one is a sharp wave<br>
+<input type="radio" id="q2" name="question" value="b"> I will try to classify epileptiform discharges as accurately as possible, but there is no need to measure each epileptiform discharge<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2><b>SPIKE-WAVE COMPLEXES</b></h2>
+<br>
+<p>A spike-wave complex is quite intuitive: imagine a spike followed by a slow wave. That is a spike-wave complex.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="SWC1" src="EEG5_img/SWC1.png" width=1200px heigth=1000px>
+	<figcaption>There are at least three epileptiform discharges in this EEG segment which clearly break the rhythm, are sharply
+ contoured, and affect most of the EEG channels (generalized field). Do you see the spike and then the aftergoing slow wave?</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="SWC2" src="EEG5_img/SWC2.png" width=1200px heigth=1000px>
+	<figcaption>Same image as above highlighting a spike (red arrow) and its slow wave (red circle).</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="SWC3" src="EEG5_img/SWC3.png" width=1200px heigth=1000px>
+	<figcaption>There is a burst of generalized spike-wave complexes in this EEG segment. Can you identify the spike and slow wave components?</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="SWC4" src="EEG5_img/SWC4.png" width=1200px heigth=1000px>
+	<figcaption>Same image as above highlighting a spike (red arrow) and its slow wave (red circle).</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="SWC5" src="EEG5_img/SWC5.png" width=1200px heigth=1000px>
+	<figcaption>Another example of spike-wave complexes which, in this case, are more irregular than in the prior examples.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>POLYSPIKES AND POLYSPIKE-WAVE COMPLEXES</b></h2>
+<br>
+<p>When a spike appears to have several phases it is termed a polyspike.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="polyspikes1" src="EEG5_img/polyspikes1.png" width=1200px heigth=1000px>
+	<figcaption>Some of the spikes appear separate from each other, but many of them appear to be a single discharge with several phases (a polyspike).
+ There is quite a a lot of subjectivity on deciding which spikes are individual spikes and which ones are polyspikes.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="polyspikes2" src="EEG5_img/polyspikes2.png" width=1200px heigth=1000px>
+	<figcaption>The epileptiform discharge with maximum at F4 has multiple phases and can be considered a polyspike.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="polyspikes3" src="EEG5_img/polyspikes3.png" width=1200px heigth=1000px>
+	<figcaption>An epileptiform discharge with several spikes followed by a slow wave is termed spike-wave complex.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+<figure>
+	<center><img id="polyspikes4" src="EEG5_img/polyspikes4.png" width=1200px heigth=1000px>
+	<figcaption>Same figure as above highlighting the polyspike component (red arrows) and the wave component (red circle).</figcaption></center>
+</figure>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question3" name="question3">
+<p><b>Q3. A colleague reading an EEG describes that there are "sharps" in the EEG. What is your colleague referring to?</b></p>
+<br>
+<input type="radio" id="q3" name="question" value="a"> Sharp transients<br>
+<input type="radio" id="q3" name="question" value="b"> Sharp waves<br>
+<input type="radio" id="q3" name="question" value="c"> Sharply-contoured slowing<br>
+<input type="radio" id="q3" name="question" value="d"> I have no idea what this colleague is referring to<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+<h2><b>SUMMARY</b></h2>
+<p><b>It is good to become familiar with the major types of epileptiform discharges: spikes, sharp waves, spike-wave complexes,
+ polyspikes, and polyspike-wave complexes. You might have noticed that spikes and sharp waves are frequently focal or multifocal
+ while spike-wave complexes appear frequently as generalized epileptiform discharges. This is generally the case, but with
+ many exceptions. The type of epileptiform discharges and their distribution help identify the epileptic syndrome. And make
+ sure to use correct terminology and not that "sharp" nonsense! Things will get much more fun soon.<br>
+
+<br>
+<br>
+<br>
+<br>
+
+</body>
+
+</html>
