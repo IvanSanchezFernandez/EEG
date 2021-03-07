@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RHCREVPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8RHCREVPG');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG7 activation procedures</title>
+<link href = "EEG7_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG7_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG7: Activation procedures</h1>
+<p>There are several situations which increase the probability of seeing epileptiform discharges in the EEG. These activation
+ procedures should be performed in each EEG (unless the patient has contraindications to them) to increase the diagnostic yield of the EEG. The
+ three main activation procedures are sleep deprivation, hyperventilation, and photic stimulation.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>SLEEP DEPRIVATION</b></h2>
+<br>
+
+<p>Sleep deprivation increases the chances of capturing epileptiform activity through two mechanisms: 1) increases the chance that the patient will fall
+ asleep during the EEG (and sleep and the transitions in and out of sleep are periods where epileptiform activity tends to occur) and 2) a sleep-deprived
+ patient is more prone to show epileptiform discharges in the EEG, even if that patient does not fall asleep.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="car" src="EEG7_img/car.png" width=1200px heigth=1000px>
+	<figcaption><b>Picture of an EEG without sleep.</b></figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<p>Sleep depriving the patient the night before the EEG and obtaining sleep during the EEG are arguably the most effective
+ activation procedures to obtain epileptiform discharges. Fortunately, they are also the easiest: it only requires the patient to markedly reduce the
+ amount of sleep the night prior to the EEG.</p>
+
+<br>
+<br>
+
+<form id="question1" name="question1">
+<p><b>Q1. A patient is scheduled to have an EEG tomorrow and you recommend that he sleeps half his usual sleep time on the night prior to the EEG.
+ The patient is worried about not sleeping because he has to drive for approximately 1 hour to get to the hospital. What is your best suggestion?</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> Ask a family member or friend to drive you in on the morning of the EEG<br>
+<input type="radio" id="q1" name="question" value="b"> Do not worry. Driving while sleep-deprived is totally safe. Many people does it every day<br>
+<input type="radio" id="q1" name="question" value="c"> You can come to the hospital by public transportation on the morning of the EEG with no need to bother a family member or friend to be with you<br>
+<input type="radio" id="q1" name="question" value="d"> It is better if we do not do sleep deprivation before the EEG<br>
+<input id="buttonQ1" type="button" value="Done!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>HYPERVENTILATION</b></h2>
+<br>
+
+<p>Hyperventilation consists of making the patient breathe deeply and rapidly for approximately 3 minutes. In children, blowing into a
+ pinwheel may facilitate this task. Hyperventilation causes a decrease in arterial CO2 with secondary cerebral vasoconstriction. This causes
+ diffuse and symmetrical high-voltage slowing. It also increases the chance of epileptiform activity appearing on the EEG.</p>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="HV1" src="EEG7_img/HV1.png" width=1200px heigth=1000px>
+	<figcaption>This patient starts hyperventilating at this point in the EEG. On the initial part of the figure you can see
+ a well-formed posterior dominant rhythm with a frequency of 10 to 11 Hz.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="HV2" src="EEG7_img/HV2.png" width=1200px heigth=1000px>
+	<figcaption>As the patient keeps hyperventilating the posterior dominant rhythm tends to slow down.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="HV3" src="EEG7_img/HV3.png" width=1200px heigth=1000px>
+	<figcaption>As the patient keeps hyperventilating the slowing of the posterior dominant rhythm becomes more prominent.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<figure>
+	<center><img id="HV4" src="EEG7_img/HV4.png" width=1200px heigth=1000px>
+	<figcaption>As the patient keeps hyperventilating, the whole EEG becomes slow and of higher amplitude.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+<form id="question2" name="question2">
+<p><b>Q2. Regarding the EEG segment below, captured during hyperventilation, check all the correct statements:</b></p>
+<figure>
+	<img id="Q2_1" src="EEG7_img/Q2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q2a" name="question" value="a"> This is normal<br>
+<input type="checkbox" id="q2b" name="question" value="b"> There is epileptiform activity in this EEG segment<br>
+<input type="checkbox" id="q2c" name="question" value="c"> The voltage of this EEG segment is too high, therefore abnormal EEG<br>
+<input type="checkbox" id="q2d" name="question" value="d"> There is too much slowing, therefore abnormal EEG<br>
+<input type="checkbox" id="q2e" name="question" value="e"> You should immediately stop hyperventilation in this patient<br>
+<input type="checkbox" id="q2f" name="question" value="f"> Encourage the patient to keep breathing like that for a total of approximately 3 minutes<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<figure>
+<img id="answerQ2_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+<form id="question3" name="question3">
+<p><b>Q3. A patient presents to your hospital for a routine EEG and you take a brief history. This patient has diabetes mellitus, hypertension,
+ smoking, and a prior stroke one year ago. Should you hyperventilate this patient?</b></p>
+<br>
+<input type="radio" id="q3" name="question" value="a"> Yes! Hyperventilation is very safe<br>
+<input type="radio" id="q3" name="question" value="b"> No! Patients with diabetes mellitus might have hypoglycemia because of hyperventilation<br>
+<input type="radio" id="q3" name="question" value="c"> No! Hyperventilation is contraindicated in patients with hypertension<br>
+<input type="radio" id="q3" name="question" value="d"> No! Hyperventilation is contraindicated in patients with a history of stroke<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>Q4. In a large epilepsy center you see 4 patients having a routine EEG at the same time in 4 different rooms. If you could do hyperventilation in
+ only one of them, which one would you prioritize?</b></p>
+<br>
+<input type="radio" id="q4a" name="question" value="a"> The 17 year-old girl with juvenile myoclonic epilepsy<br>
+<input type="radio" id="q4b" name="question" value="b"> The 20 year-old man with autosomal dominant nocturnal frontal lobe epilepsy<br>
+<input type="radio" id="q4c" name="question" value="c"> The 6 year-old boy with childhood absence epilepsy<br>
+<input type="radio" id="q4d" name="question" value="d"> The 79 year-old man with epilepsy secondary to a prior stroke<br>
+<input id="buttonQ4" type="button" value="Done!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+
+<h2><b>PHOTIC STIMULATION</b></h2>
+<br>
+
+<p>Photic stimulation consists of showing repetitive flashing lights to the patient at specific frequencies. This can be annoying to patients and they might close their eyes. The
+ good news is that, as long as the patient has his or her head more or less in the direction of the light, photic stimulation works anyway. The light causes
+ its effect even through closed eyelids.<br><br>Each pulse of photic stimulation typically lasts 6-12 seconds in which lights flash at a constant frequency. That frequency
+ varies from pulse to pulse with frequencies that go from approximately 3 Hz to approximately 25 Hz. A typical photic stimulation paradigm would give a pulse at 3 Hz for
+ 10 seconds followed (after several seconds without photic stimulation) by another 10 seconds pulse at 5 Hz, followed (after several seconds without photic stimulation)
+ by another 10 seconds pulse at 8 Hz, followed (after several seconds without photic stimulation) by another 10 seconds pulse at 12 Hz, followed
+ (after several seconds without photic stimulation) by another 10 seconds pulse at 16 Hz, followed (after several seconds without photic stimulation)
+ by another 10 seconds pulse at 18 Hz, followed (after several seconds without photic stimulation) by another 10 seconds pulse at 21 Hz, followed
+ (after several seconds without photic stimulation) by another 10 seconds pulse at 25 Hz.</p>
+
+<br>
+<br>
+
+<form id="question5" name="question5">
+<p><b>Q5. While reading an EEG you find the following phenomenon during photic stimulation. What should you do?</b></p>
+<figure>
+	<img id="Q5_1" src="EEG7_img/Q5.1.png">
+</figure>
+<br clear="all" />
+<figure>
+	<img id="Q5_2" src="EEG7_img/Q5.2.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="q5a" name="question" value="a"> Call the rapid response team<br>
+<input type="radio" id="q5b" name="question" value="b"> Immediately stop the photic stimulation<br>
+<input type="radio" id="q5c" name="question" value="c"> Continue the photic stimulation and the EEG as usual<br>
+<input type="radio" id="q5d" name="question" value="d"> Inject an antiseizure medication intravenously as soon as possible<br>
+<input id="buttonQ5" type="button" value="Done!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<p id = "afterQ5_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+<form id="question6" name="question6">
+<p><b>Q6. Regarding the EEG segment below, captured during photic stimulation, check all the correct statements:</b></p>
+<figure>
+	<img id="Q6_1" src="EEG7_img/Q6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q6a" name="question" value="a"> If epileptiform activity occurs only during photic stimulation, this is still a normal EEG<br>
+<input type="checkbox" id="q6b" name="question" value="b"> Call the rapid response team<br>
+<input type="checkbox" id="q6c" name="question" value="c"> Continue the photic stimulation and the EEG as usual<br>
+<input type="checkbox" id="q6d" name="question" value="d"> There is epileptiform activity in this EEG segment<br>
+<input type="checkbox" id="q6e" name="question" value="e"> Inject an antiseizure medication intravenously as soon as possible<br>
+<input type="checkbox" id="q6f" name="question" value="f"> There is no epileptiform activity in this EEG segment<br>
+<input id="buttonQ6" type="button" value="Done!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+<br>
+<figure>
+<img id="answerQ6_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ6_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<figure>
+	<center><img id="PS1" src="EEG7_img/PS1.png" width=1200px heigth=1000px>
+	<figcaption>Sometimes photoparoxysmal response is more subtle. Can you see the epileptiform discharges here?</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="PS2" src="EEG7_img/PS2.png" width=1200px heigth=1000px>
+	<figcaption>Same figure as above emphasizing the epileptiform discharges with red arrows.</figcaption></center>
+</figure>
+
+<br>
+<br>
+
+
+<form id="question7" name="question7">
+<p><b>Q7. In a large epilepsy center you see 4 patients having a routine EEG at the same time in 4 different rooms. If you could do photic stimulation in
+ only one of them, which one would you prioritize?</b></p>
+<br>
+<input type="radio" id="q7a" name="question" value="a"> The 17 year-old girl with juvenile myoclonic epilepsy<br>
+<input type="radio" id="q7b" name="question" value="b"> The 20 year-old man with autosomal dominant nocturnal frontal lobe epilepsy<br>
+<input type="radio" id="q7c" name="question" value="c"> The 6 year-old boy with childhood absence epilepsy<br>
+<input type="radio" id="q7d" name="question" value="d"> The 79 year-old man with epilepsy secondary to a prior stroke<br>
+<input id="buttonQ7" type="button" value="Done!" onclick="checkQ7();">
+</form>
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+<br>
+<p id = "afterQ7_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+
+<h2><b>OTHER ACTIVATION PROCEDURES</b></h2>
+<br>
+
+<p>There are other activation procedures which are very specific to specific patients. For example,
+ some individuals have epileptiform discharges or even seizures triggered by <a href='https://pubmed.ncbi.nlm.nih.gov/25726285/' target='_blank'>music (or repetitive rhythms)</a>. Other patients
+ have epileptiform discharges or even seizures triggered by <a href='https://academic.oup.com/brain/article-pdf/118/1/75/978756/118-1-75.pdf' target='_blank'>reading (or other language tasks)</a>.
+ There are multiple other potential triggers for epileptiform discharges and seizures including <a href='https://pubmed.ncbi.nlm.nih.gov/33417183/' target='_blank'>hot water</a>,
+ <a href='https://academic.oup.com/brain/article-pdf/106/3/537/758592/106-3-537.pdf' target='_blank'>pain</a>, or many other potential triggers.<br><br>Those triggers are so patient-specific that they are not worth trying them unless there is
+ some suggestion from the history that they might work in that patient.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2><b>SUMMARY</b></h2>
+<p><b>You should perform sleep deprivation (before the EEG) and try to obtain sleep (during the EEG). You should also perform
+ hyperventilation and photic stimulation in each EEG (unless the patient has specific contraindications for it).<br><br>
+Remember to ask your patients what specific factors trigger their seizures.</b></p>
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
