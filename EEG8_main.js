@@ -31,7 +31,7 @@ function checkQ2() {
 
 	if (document.getElementById("q2a").checked == false && document.getElementById("q2b").checked == true && document.getElementById("q2c").checked == false && document.getElementById("q2d").checked == false && document.getElementById("q2e").checked == true && document.getElementById("q2f").checked == true) {
 		document.getElementById("after_submitQ2").style.visibility = "visible";
-		document.getElementById("answerQ2").innerHTML = "Correct! <br><br> This EEG contains beautiful vertex waves which are symmetric around the midline (big red rectangle) and some sleep spindles (small red rectangles).<br><br>Apart from that normal activity which defines stage II sleep, there are C4 spikes and sharp waves (red arrows).";
+		document.getElementById("answerQ2").innerHTML = "Correct! <br><br> This EEG contains beautiful vertex waves which are symmetric around the midline (big red rectangle) and some sleep spindles (small red rectangles).<br><br>Apart from that normal activity which defines stage II sleep, there are C4 spikes and sharp waves (red arrows). This epileptiform activity breaks the rhythm and is sharply contoured.";
 		document.getElementById("after_submitQ2").style.background = "lightgreen";
 		document.getElementById("answerQ2_picture").src = "EEG8_img/Q2.2.png";
 		document.getElementById("afterQ2_picture").innerHTML = "Great job!";
@@ -87,7 +87,7 @@ function checkQ4() {
 
 	if (document.getElementById("q4a").checked == false && document.getElementById("q4b").checked == false && document.getElementById("q4c").checked == true && document.getElementById("q4d").checked == false && document.getElementById("q4e").checked == false && document.getElementById("q4f").checked == true) {
 		document.getElementById("after_submitQ4").style.visibility = "visible";
-		document.getElementById("answerQ4").innerHTML = "Correct! <br><br> This EEG segment is mostly high-amplitude (look at the blue scale measuring voltage) slow waves (marked by red circles). That defines stage III sleep.<br><br>There are P7 spikes, which make the EEG segment abnormal.";
+		document.getElementById("answerQ4").innerHTML = "Correct! <br><br> This EEG segment is mostly high-amplitude (look at the blue scale measuring voltage) slow waves (marked by red circles). That defines stage III sleep.<br><br>There are P7 spikes (red arrows), which make the EEG segment abnormal. This epileptiform activity breaks the rhythm and is sharply contoured.";
 		document.getElementById("after_submitQ4").style.background = "lightgreen";
 		document.getElementById("answerQ4_picture").src = "EEG8_img/Q4.2.png";
 		document.getElementById("afterQ4_picture").innerHTML = "Great job!";
@@ -115,7 +115,7 @@ function checkQ5() {
 
 	if (document.getElementById("q5a").checked == true && document.getElementById("q5b").checked == false && document.getElementById("q5c").checked == false && document.getElementById("q5d").checked == false && document.getElementById("q5e").checked == true && document.getElementById("q5f").checked == false) {
 		document.getElementById("after_submitQ5").style.visibility = "visible";
-		document.getElementById("answerQ5").innerHTML = "Exactly! <br><br> The parts marked within the red rectangles (and most of this EEG segment) are muscle artifact. Rhythmic muscle artifact mostly in the temporal regions occurs while chewing because masticatory muscles contract and relax rhythmically. It is called 'chewing artifact' and when you see it once you will never miss it anymore: it has a very typical appearance.<br><br>No need to call the rapid response team for this. If you see the video corresponding to EEG segments with eating artifact you will most likely see the patient eating.";
+		document.getElementById("answerQ5").innerHTML = "Exactly! <br><br> The parts marked within the red rectangles (and most of this EEG segment) are muscle artifact. Rhythmic muscle artifact mostly in the temporal regions occurs while chewing because masticatory muscles contract and relax rhythmically. It is called 'chewing artifact' and when you see it once you will never miss it anymore: it has a very typical appearance.<br><br>No need to call the rapid response team for this. If you see the video corresponding to EEG segments with chewing artifact you will most likely see the patient eating.";
 		document.getElementById("after_submitQ5").style.background = "lightgreen";
 		document.getElementById("answerQ5_picture").src = "EEG8_img/Q5.2.png";
 		document.getElementById("afterQ5_picture").innerHTML = "Muscle artifact occurs only in wakefulness (an exception being babies, who can still suck milk while falling asleep or sleep).<br><br>Great job!";
@@ -143,7 +143,7 @@ function checkQ6() {
 
 	if (document.getElementById("q6a").checked == false && document.getElementById("q6b").checked == false && document.getElementById("q6c").checked == false && document.getElementById("q6d").checked == false && document.getElementById("q6e").checked == true && document.getElementById("q6f").checked == true) {
 		document.getElementById("after_submitQ6").style.visibility = "visible";
-		document.getElementById("answerQ6").innerHTML = "Yes! <br><br> At the beginning of the EEG segment there is some muscle artifact. Then, there is a well-formed posterior dominant rhythm. There are even small eyeblink artifacts towards the end of the EEG segment. These are elements typical of wakefulness.<br><br>There are also C4 sharp waves (marked by red arrows).";
+		document.getElementById("answerQ6").innerHTML = "Yes! <br><br> At the beginning of the EEG segment there is some muscle artifact. Then, there is a well-formed posterior dominant rhythm. There are even small eyeblink artifacts towards the end of the EEG segment. These are elements typical of wakefulness.<br><br>There are also C4 sharp waves (marked by red arrows). This epileptiform activity breaks the rhythm and is sharply contoured, although the electric field is not particularly well seen here.";
 		document.getElementById("after_submitQ6").style.background = "lightgreen";
 		document.getElementById("answerQ6_picture").src = "EEG8_img/Q6.2.png";
 		document.getElementById("afterQ6_picture").innerHTML = "Great job!";
@@ -227,7 +227,7 @@ function checkQ9() {
 
 	if (document.getElementById("q9a").checked == true && document.getElementById("q9b").checked == false && document.getElementById("q9c").checked == true && document.getElementById("q9d").checked == false && document.getElementById("q9e").checked == false && document.getElementById("q9f").checked == false) {
 		document.getElementById("after_submitQ9").style.visibility = "visible";
-		document.getElementById("answerQ9").innerHTML = "Correct! <br><br> This is a normal EEG segment during wakefulness, with a posterior dominant rhythm (in red rectangles). What is that thing in the frontal leads? That is eye flutter: if you open the video for EEG segments like this you will see the patient's eyes moving fast. As with the chewing artifact, once you see it, you will always recognize it.";
+		document.getElementById("answerQ9").innerHTML = "Correct! <br><br> This is a normal EEG segment during wakefulness, with a posterior dominant rhythm (in red rectangles). What is that thing in the frontal leads? That is eye flutter: if you open the video for EEG segments like this you will see the patient's eyelids moving fast and rhythmically. As with the chewing artifact, once you see it, you will always recognize it.";
 		document.getElementById("after_submitQ9").style.background = "lightgreen";
 		document.getElementById("answerQ9_picture").src = "EEG8_img/Q9.2.png";
 		document.getElementById("afterQ9_picture").innerHTML = "Great job!";
