@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RHCREVPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8RHCREVPG');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG10 slowing</title>
+<link href = "EEG10_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG10_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG10: Slowing</h1>
+<p>Slowing occurs when the EEG rhythms are slower than expected.<br><br>What is slower than expected? When is there too much slowing? It is complicated!<br><br>In this post we will learn when
+ slowing is abnormal and how to classify slowing.</p>
+
+
+<br>
+<br>
+
+
+<h2><b>FOCAL SLOWING</b></h2>
+<br>
+<figure>
+	<center><img id="focalslowing1" src="EEG10_img/focalslowing1.png" width=1200px heigth=1000px>
+	<figcaption><b>Do you notice something unusual in this EEG?</b></figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focalslowing2" src="EEG10_img/focalslowing2.png" width=1200px heigth=1000px>
+	<figcaption>Try to compare the left hemisphere (upper red bracket) with the right hemisphere (lower red bracket). Most rhythms in the
+ right hemisphere appear to be slower than the corresponding rhythms in the left hemisphere. This EEG is not symmetric.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focalslowing3" src="EEG10_img/focalslowing3.png" width=1200px heigth=1000px>
+	<figcaption>The intuitive sense of asymmetry can become clear if you compare the rhythms in a channel on one side and its equivalent
+ channel on the other side. For example, if we compare the F3-C3 channel with the F4-C4 channel (should be roughly symmetric), we see
+ that the rhythms in the F4-C4 channel are much slower than in the F3-C3 channel.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p><b>Slowing that occurs locally in some regions of the head is termed focal slowing.</b> Focal slowing is relatively easy to identify because
+ the normal EEG should look symmetric across the midline. Therefore, asymmetries catch the reader's eye and help identify focal slowing.</p>
+
+
+<br>
+<br>
+
+
+<form id="question1" name="question1">
+<p><b>Q1. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q1_1" src="EEG10_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q1a" name="question" value="a"> This EEG segment is symmetric<br>
+<input type="checkbox" id="q1b" name="question" value="b"> This EEG segment occurs during wakefulness<br>
+<input type="checkbox" id="q1c" name="question" value="c"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q1d" name="question" value="d"> There is focal slowing on the right temporal region<br>
+<input type="checkbox" id="q1e" name="question" value="e"> There is focal slowing on the left temporal region<br>
+<input type="checkbox" id="q1f" name="question" value="f"> There is focal slowing in the right and left temporal regions<br>
+<input id="buttonQ1" type="button" value="Done!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question2" name="question2">
+<p><b>Q2. What is the interpretation of focal slowing in an EEG?</b></p>
+<br>
+<input type="radio" id="q2" name="question" value="a"> A seizure focus<br>
+<input type="radio" id="q2" name="question" value="b"> A functional or structural focal abnormality in the brain<br>
+<input type="radio" id="q2" name="question" value="c"> A normal variant<br>
+<input type="radio" id="q2" name="question" value="d"> A marker for a structural abnormality<br>
+<input type="radio" id="q2" name="question" value="d"> A postictal state after a focal seizure<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question3" name="question3">
+<p><b>Q3. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q3_1" src="EEG10_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q3a" name="question" value="a"> There are epileptiform discharges in the left hemisphere<br>
+<input type="checkbox" id="q3b" name="question" value="b"> This EEG segment is symmetric<br>
+<input type="checkbox" id="q3c" name="question" value="c"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q3d" name="question" value="d"> There is slowing in the left hemisphere compared to the right hemisphere<br>
+<input type="checkbox" id="q3e" name="question" value="e"> There are epileptiform discharges in the right hemisphere<br>
+<input type="checkbox" id="q3f" name="question" value="f"> There cannot be epileptiform discharges in areas of slowing<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+<p><b>Key concept: Focal slowing marks an area of structurally or functionally abnormal brain.</b> Areas of focal slowing often have admixed epileptiform activity within the slowing.
+ It is also frequent to see areas of focal slowing without admixed epileptiform discharges and, at some point earlier or later in the EEG, appearance of 
+ epileptiform discharges in the same area of the brain. Focal slowing and focal epileptiform activity are different and mean different things (focal epileptiform
+ discharges: a decreased threshold for focal seizures in that area; focal slowing: focal area of the brain which is functionally or structurally abnormal).
+ Focal epileptiform discharges and focal slowing can occur independently: an abnormal area of the brain is not necessarily epileptogenic, but
+ focal epileptiform discharges and focal slowing occur in the same area more often than expected by chance.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focalslowingsharpwaves1" src="EEG10_img/focalslowingsharpwaves1.png" width=1200px heigth=1000px>
+	<figcaption>This EEG segment shows left temporal slowing with admixed sharp waves.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focalslowingsharpwaves2" src="EEG10_img/focalslowingsharpwaves2.png" width=1200px heigth=1000px>
+	<figcaption>Same EEG segment as above. The left temporal region has slower rhythms than the right temporal region.
+ The red arrows mark the T7 sharp waves. This is the same patient who had left temporal slowing without epileptiform discharges in the EEG segment in Question 1.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focalslowingsharpwaves3" src="EEG10_img/focalslowingsharpwaves3.png" width=1200px heigth=1000px>
+	<figcaption>Another example showing left temporal slowing with admixed sharp waves from the same patient as above.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Focal slowing can be <b>intermittent focal slowing</b>, when the slowing affects an area of the brain sometimes, but other times the same area of the brain shows normal rhythms or <b>continuous focal slowing</b>, when the focal slowing occurs all the time or most of the time.
+ This distinction is not particularly specific for the etiology. Postictal focal slowing tends to appear only once after a seizure and then disappear, but other etiologies like tumors or strokes can appear as
+ intermittent focal slowing or continuous focal slowing.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>GENERALIZED SLOWING</b></h2>
+<br>
+<p>Generalized slowing occurs when the EEG rhythms are slower than expected for age, stage in the wake-sleep cycle, and physiological condition and this
+ abnormal slowing affects all areas of the brain diffusely.</p>
+
+
+<br>
+<br>
+
+
+<form id="question4" name="question4">
+<p><b>Q4. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q4_1" src="EEG10_img/Q4.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q4a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q4b" name="question" value="b"> This EEG segment belongs to wakefulness<br>
+<input type="checkbox" id="q4c" name="question" value="c"> This is an abnormal segment of EEG<br>
+<input type="checkbox" id="q4d" name="question" value="d"> Most of the brain waves in this EEG segment are between 3Hz and 5Hz<br>
+<input type="checkbox" id="q4e" name="question" value="e"> Diffuse slow waves like this can only occur in deep sleep or in an abnormal brain<br>
+<input type="checkbox" id="q4f" name="question" value="f"> More information is needed to interpret this EEG<br>
+<input id="buttonQ4" type="button" value="Done!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question5" name="question5">
+<p><b>Q5. You are reading the EEG segment below and ask about the age of the patient. You find that the patient is 39 years old at the time of the EEG.
+ You can conclude that:</b></p>
+<figure>
+	<img id="Q5_1" src="EEG10_img/Q5.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q5a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q5b" name="question" value="b"> Adults do not have rhythms in the delta range<br>
+<input type="checkbox" id="q5c" name="question" value="c"> This EEG segment could be occurring during hyperventilation<br>
+<input type="checkbox" id="q5d" name="question" value="d"> This EEG segment could be occurring during photic stimulation<br>
+<input type="checkbox" id="q5e" name="question" value="e"> There are epileptiform discharges in this EEG segment<br>
+<input type="checkbox" id="q5f" name="question" value="f"> This is an abnormal segment of EEG<br>
+<input id="buttonQ5" type="button" value="Done!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<figure>
+<img id="answerQ5_picture">
+</figure>
+<br clear="all" />
+<p id = "afterQ5_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question6" name="question6">
+<p><b>Q6. You are reading the EEG segment below. You know that the patient is an adult, the nurse tells you that the patient was awake during the
+ period of this EEG segment, and the patient was not hyperventilating. Now you can say that:</b></p>
+<figure>
+	<img id="Q6_1" src="EEG10_img/Q6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q6a" name="question" value="a"> This is continuous generalized slowing<br>
+<input type="checkbox" id="q6b" name="question" value="b"> This is intermittent generalized slowing<br>
+<input type="checkbox" id="q6c" name="question" value="c"> The rhythms in the mid-portion of this EEG segment are around 2-3 Hz<br>
+<input type="checkbox" id="q6d" name="question" value="d"> Slowing in this EEG segment can only mean abnormal function of the brain<br>
+<input type="checkbox" id="q6e" name="question" value="e"> This intermittent slowing with abrupt onset and end can only mean a sudden fall into stage III sleep<br>
+<input type="checkbox" id="q6f" name="question" value="f"> More information is needed<br>
+<input id="buttonQ6" type="button" value="Done!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+<br>
+<p id = "afterQ6_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowingsharpwaves1" src="EEG10_img/generalizedslowingsharpwaves1.png" width=1200px heigth=1000px>
+	<figcaption>This EEG shows generalized 1-2 Hz slowing with frequent admixed generalized spike-wave complexes.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowingsharpwaves2" src="EEG10_img/generalizedslowingsharpwaves2.png" width=1200px heigth=1000px>
+	<figcaption>This EEG shows generalized 1-2 Hz slowing with frequent admixed generalized spike-wave complexes. When
+ epileptiform discharges are so frequent it is difficult to differentiate the slowing from the spike-wave complex from the generalized slowing.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowingsharpwaves3" src="EEG10_img/generalizedslowingsharpwaves3.png" width=1200px heigth=1000px>
+	<figcaption>In periods of the EEG from the same patient where generalized spike-wave complexes are less frequent, it is more clear that
+ there is generalized slowing apart from the slowing from slow-waves from spike-wave complexes.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowing1" src="EEG10_img/generalizedslowing1".png" width=1200px heigth=1000px>
+	<figcaption>As with focal slowing, it may or may not be accompanied by epileptiform discharges. In this case there is 2-3 Hz generalized slowing
+ without epileptiform activity.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowing2" src="EEG10_img/generalizedslowing2".png" width=1200px heigth=1000px>
+	<figcaption>This is another example of 2-3 Hz generalized slowing from the same patient than in the figure above.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>As with focal slowing, generalized slowing can be <b>intermittent generalized slowing</b>, when the generalized slowing appears sometimes,
+ but other times the brain shows normal rhythms or <b>continuous generalized slowing</b>, when the generalized slowing occurs all the time or most of the time.
+ This distinction is not particularly specific for the etiology. Both intermittent and continuous generalized slowing mean diffuse dysfunction of the brain
+ and the etiologies causing that can be very broad.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="generalizedslowing3" src="EEG10_img/generalizedslowing3".png" width=1200px heigth=1000px>
+	<figcaption>This is an EEG segment with intermittent generalized 4 Hz slowing in a patient who, at other times of the EEG, had an 8 Hz posterior dominant rhythm.
+ Remember that 4 Hz rhythms could be normal in a young child during wakefulness, but are abnormal in older children and adults like this patient.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<form id="question7" name="question7">
+<p><b>Q7. You are reading an EEG of a 10 year-old child during wakefulness and find the segments below. Check all the correct statements:</b></p>
+<figure>
+	<img id="Q7_1" src="EEG10_img/Q7.1.png">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+	<img id="Q7_2" src="EEG10_img/Q7.2.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q7a" name="question" value="a"> There are parts of the EEG with high-amplitude 4-5 Hz generalized slowing<br>
+<input type="checkbox" id="q7b" name="question" value="b"> There are epileptiform discharges in this EEG segment<br>
+<input type="checkbox" id="q7c" name="question" value="c"> There is muscle artifact in this EEG segment<br>
+<input type="checkbox" id="q7d" name="question" value="d"> There are eyelid blinking artifacts in this EEG segment<br>
+<input type="checkbox" id="q7e" name="question" value="e"> Opening the eyes will make the high-amplitude rhythms disappear<br>
+<input id="buttonQ7" type="button" value="Done!" onclick="checkQ7();">
+</form>
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+<br>
+<figure>
+<img id="answerQ7_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ7_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>SUMMARY</b></h2>
+<p><b>After reviewing this post, you have learned a lot about slowing. Slowing can affect the whole brain (generalized slowing) or only some local areas (focal slowing).
+ Slowing can appear every now and then (intermittent slowing) or it can appear all the time or most of the time (continuous slowing).<br><br>
+That gives us the four types of slowing:
+Intermittent focal slowing<br> 
+Continuous focal slowing<br> 
+Intermittent generalized slowing<br> 
+Continuous generalized slowing<br>
+These types of slowing can appear alone or in combination with epileptiform activity. Different types of slowing can also appear in the same patient (for example,
+ a patient with generalized slowing and a focal slowing on top of it or a patient with focal slowing in several areas of the brain).<br><br>
+Before calling any type of slowing as abnormal, make sure to rule out that the slowing is not physiological (young age, sleep, hyperventilation...) or an
+ artifact (patient brushing teeth, cough, machines in the intensive care unit...).<br><br>
+Let's keep learning.</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
