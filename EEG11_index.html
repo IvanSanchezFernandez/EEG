@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RHCREVPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8RHCREVPG');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG11 seizures!</title>
+<link href = "EEG11_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG11_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG11: Seizures!</h1>
+<p>Seizures are the most characteristic feature of epilepsy.<br><br>In many patients seizures are (fortunately) rare and, therefore, rarely captured on EEG.
+ However, when seizures are captured on EEG, they provide unparalleled information on the seizure type, seizure duration, lateralization and potential
+ localization of the seizure onset focus, and (if the patient appears in the video during the seizure) the correlation between EEG findings and clinical
+ semiology. Some seizures or combination of seizures help define the epilepsy syndrome of the patient.<br><br>In a perfect world, all seizures would have
+ the same EEG defining characteristics and would be straightforward to identify when they occur. Needless to say that in the real world, there are no
+ universal defining characteristics of a seizure and there are many different EEG patterns which can be found during a seizure.<br><br>Let's try to
+ learn the most typical ones.</p>
+
+
+<br>
+<br>
+
+
+<h2><b>SEIZURES WITH GENERALIZED SPIKE-WAVE COMPLEXES</b></h2>
+<br>
+<figure>
+	<center><img id="absence1" src="EEG11_img/absence1.png" width=1200px heigth=1000px>
+	<figcaption>The beginning of this EEG segment shows muscle artifact in the temporal regions and even what appears to be a posterior dominant rhythm.
+ After approximately the fifth second, something abruptly breaks the rhythm and continues rhythmically at approximately 3 Hz. This is a typical absence seizure
+ with the typical pattern of 3 Hz spike-wave complexes. Probably it is difficult to identify it at this voltage.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="absence2" src="EEG11_img/absence2.png" width=1200px heigth=1000px>
+	<figcaption>Increasing the voltage gain in the same EEG segment makes it easier to identify the 3 Hz spike-wave complexes.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="absence3" src="EEG11_img/absence3.png" width=1200px heigth=1000px>
+	<figcaption>Increasing even more the voltage gain in the same EEG segment makes it clear the pattern of approximately 3 spike-wave complexes per second
+ which is characteristic of typical absence seizures. Pay attention to the voltage in the blue voltage marker in each figure. It shows that the voltage of these
+ spike-wave complexes is very high.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="absence4" src="EEG11_img/absence4.png" width=1200px heigth=1000px>
+	<figcaption>The seizure which started in the prior EEG segment continued into the next page and ended abruptly as shown in this EEG segment.</figcaption></center>
+</figure>
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question1" name="question1">
+<p><b>Q1. Drag and drop to match the most characteristic features of absence seizures in each epilepsy syndrome:</b>
+<br>
+<br>
+
+<div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p>&emsp;<b><br><br>Childhood absence epilepsy</b></p>
+<br>
+<br>
+<div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p>&emsp;<b><br>Juvenile myoclonic epilepsy</b></p>
+<br>
+<br>
+<div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<p>&emsp;<b><br>Lennox-Gastaut syndrome</b></p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<span id="drag1" data-div="drop1" draggable="true" ondragstart="drag(event)"><b>3 Hz generalized spike-wave complexes&emsp;</b></span></div>
+<br><br>
+<span id="drag2" data-div="drop1" draggable="true" ondragstart="drag(event)"><b>Frequently triggered by hyperventilation&emsp;</b></span></div>
+<span id="drag3" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>Polyspikes&emsp;</b></span></div>
+<br><br>
+<span id="drag4" data-div="drop3" draggable="true" ondragstart="drag(event)"><b>Progressive onset and end with smooth merging with underlying background&emsp;</b></span></div>
+<br><br>
+<span id="drag5" data-div="drop3" draggable="true" ondragstart="drag(event)"><b>1 Hz to 2.5 Hz spike-wave complexes&emsp;</b></span></div>
+<span id="drag6" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>Frequently triggered by photic stimulation&emsp;</b></span></div>
+<br><br>
+<span id="drag7" data-div="drop2" draggable="true" ondragstart="drag(event)"><b>4 Hz to 5 Hz generalized spike-wave complexes&emsp;</b></span></div>
+<br>
+<br>
+<input id="buttonQ1" type="button" value="Show me all the answers, please!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+
+</div>
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+<p>Typical absence seizures are characterized by generalized onset 3 Hz spike-wave complexes. The onset and end of these seizures is typically abrupt with a sudden
+ transition between the normal EEG background and the seizure. Because of that, typical absence seizures are relatively easy to identify. They are so typical and
+ characteristic that they are shown as the first example of a seizure in textbooks in medical school.<br><br>Even this very typical pattern has a couple of characteristics
+ which is a little bit irregular. Sometimes, the seizure starts with a lead-in of 1-2 seconds wich can be more focal or lateralized. Also, the frequency is not
+ always 3 Hz, but can evolve from approximately 4 Hz at the beginning of the seizure to approximately 2 Hz towards the end of the seizure.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="absence5" src="EEG11_img/absence5.png" width=1200px heigth=1000px>
+	<figcaption>The same seizure as above shows that there is an initial lead-in which appears more prominent in the
+ left hemisphere than in the right hemisphere (red brackets). It also shows that the beginning of the seizure tends to have faster
+ spike-wave complexes, close to a frequency of 4 Hz.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="absence6" src="EEG11_img/absence6.png" width=1200px heigth=1000px>
+	<figcaption>The frequency tends to slow down and, towards the end of the seizure is close to 2 Hz.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<form id="question2" name="question2">
+<p><b>Q2. When evaluating a seizure on EEG which appears to be a typical absence seizure, what features would make you suspicious of a focal seizure onset?</b></p>
+<br>
+<input type="radio" id="q2" name="question" value="a"> A lead-in that appears consistently on the same hemisphere in several seizures<br>
+<input type="radio" id="q2" name="question" value="b"> A lead-in that appears sometimes on the right hemisphere and sometimes on the left hemisphere<br>
+<input type="radio" id="q2" name="question" value="c"> A typical absence seizure with no lead-in<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>SEIZURES WITH GENERALIZED FAST (POLY)SPIKES</b></h2>
+<br>
+<figure>
+	<center><img id="tonic1" src="EEG11_img/tonic1.png" width=1200px heigth=1000px>
+	<figcaption>After approximately the third second, something abruptly breaks the rhythm. It is generalized spikes at a rapid frequency of 
+ approximately 10-20 Hz.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="tonic2" src="EEG11_img/tonic2.png" width=1200px heigth=1000px>
+	<figcaption>The seizure in the prior EEG segment continues and finishes abruptly as shown in this EEG segment.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="tonic3" src="EEG11_img/tonic3.png" width=1200px heigth=1000px>
+        <br clear="all" />
+        <br>
+	<center><img id="tonic4" src="EEG11_img/tonic4.png" width=1200px heigth=1000px>
+	<figcaption>Another example of this type of seizure on EEG. Frequently (although not always), the clinical correlate of this seizure is a generalized tonic seizure.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="spasms1" src="EEG11_img/spasms1.png" width=1200px heigth=1000px>
+	<figcaption>An infantile spasm can be considered a variant of a generalized tonic seizure.
+ See the fast rhythm and voltage attenuation which occurs during the red bracket and differentiates the infantile spasm from the (very abnormal) rest of the EEG.
+ Try to see how the pattern in the infantile spasm is similar to the pattern in the generalized tonic seizure.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question3" name="question3">
+<p><b>Q3. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q3_1" src="EEG11_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+	<img id="Q3_2" src="EEG11_img/Q3.2.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q3a" name="question" value="a"> This is most likely a typical absence seizure without a lead-in<br>
+<input type="checkbox" id="q3b" name="question" value="b"> This is most likely a generalized tonic seizure<br>
+<input type="checkbox" id="q3c" name="question" value="c"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q3d" name="question" value="d"> There is no evolution in frequency and amplitude in this seizure<br>
+<input type="checkbox" id="q3e" name="question" value="e"> The onset of this seizure is focal<br>
+<input type="checkbox" id="q3f" name="question" value="f"> The frequency of spikes is approximately 4-5 Hz<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>FOCAL SEIZURES WITH EVOLUTION IN FREQUENCY, AMPLITUDE, AND SPREAD</b></h2>
+<br>
+
+
+<p>Focal seizures are among the ones in which the evolution in frequency, amplitude, and area of involvement is more clearly seen.</p>
+
+
+<br>
+
+
+<figure>
+	<center><img id="focal1" src="EEG11_img/focal1.png" width=1200px heigth=1000px>
+	<figcaption>After approximately the third second, there is some rhythmic activity in the posterior channels of the left hemisphere (mainly
+ T7-P7, P7-O1, C3-P3, P3-O1, and Cz-Pz).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal2" src="EEG11_img/focal2.png" width=1200px heigth=1000px>
+	<figcaption>This rhythmic activity persists for several seconds with minimal evolution in frequency, amplitude, and area of involvement.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal3" src="EEG11_img/focal3.png" width=1200px heigth=1000px>
+	<figcaption>This rhythmic activity continues with minimal evolution in frequency, amplitude, and area of involvement.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal4" src="EEG11_img/focal4.png" width=1200px heigth=1000px>
+	<figcaption>Towards the end of this EEG segment, the frequency slows down and the amplitude increases slightly. The area of involvement includes more anterior EEG channels.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal5" src="EEG11_img/focal5.png" width=1200px heigth=1000px>
+	<figcaption>The slowing in frequency and increase in amplitude is clear in this EEG segment. In addition, the rhythmic activity spreads to more anterior channels in the left hemisphere.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal6" src="EEG11_img/focal6.png" width=1200px heigth=1000px>
+	<figcaption>At the end of the seizure the frequency is much slower (2-3 Hz) than at the beginning, the amplitude is much higher, and the affected area includes the whole left hemisphere and some channels in the right hemisphere.
+ Compare with the EEG segment showing the seizure onset. <b>That is: evolution in frequency, amplitude, and spread, the defining features of a seizure.</b></figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>The temporal lobe is a frequent focus for seizures, both in adults and in children. Pay attention to the evolution of rhythmicity in the right temporal region in the seizure below.</p>
+
+
+<br>
+
+
+<figure>
+	<center><img id="focal7" src="EEG11_img/focal7.png" width=1200px heigth=1000px>
+	<figcaption>Build-up of semirrhythmic activity at T8 and, to a lesser extent, C4.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal8" src="EEG11_img/focal8.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal9" src="EEG11_img/focal9.png" width=1200px heigth=1000px>
+	<figcaption>Slow build-up of semirrhythmic activity with progressively slower frequency and progressive increase in amplitude in the right temporal region.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal10" src="EEG11_img/focal10.png" width=1200px heigth=1000px>
+	<figcaption>Slowing, increase in amplitude, and spread to other channels are evident at this point.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="focal11" src="EEG11_img/focal11.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal12" src="EEG11_img/focal12.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal13" src="EEG11_img/focal13.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal14" src="EEG11_img/focal14.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal15" src="EEG11_img/focal15.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal16" src="EEG11_img/focal16.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal17" src="EEG11_img/focal17.png" width=1200px heigth=1000px>
+	<figcaption>The frequency and amplitude changes over the course of the seizure with periods of slowing down and periods of speeding up: <b>Evolution is one of the main defining features of a seizure.</b></figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Follow the evolution of the seizure below. Do you see the evolution in frequency, amplitude, and spread?</p>
+<br>
+
+
+<figure>
+	<center><img id="focal18" src="EEG11_img/focal18.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal19" src="EEG11_img/focal19.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal20" src="EEG11_img/focal20.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal21" src="EEG11_img/focal21.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal22" src="EEG11_img/focal22.png" width=1200px heigth=1000px>
+        <br>
+        <br>
+	<center><img id="focal23" src="EEG11_img/focal23.png" width=1200px heigth=1000px>
+	<figcaption><b>Evolution is one of the main defining features of a seizure.</b></figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>SUMMARY</b></h2>
+<p><b>After reviewing this post, you have learned a little bit about the most frequent EEG patterns found in a seizure. There are multiple variations of the
+ seizure patterns above (for example, seizures with fast polyspikes can be focal, focal seizures can generalize, etc.). Also, there are many other EEG patterns
+ found in seizures. However, learning the patterns above is a good starting point.<br><br>
+Hopefully, you learned that a seizure typically evolves in frequency (rhythmicity changes its frequency over time), amplitude (the EEG pattern changes in amplitude over time), and
+ the area affected by the seizure tends to change (typically spread) over time.<br><br>
+Evolution is probably the most defining characteristic of a seizure and the only feature that is common to all seizure types.<br><br>
+Let's keep learning.</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
