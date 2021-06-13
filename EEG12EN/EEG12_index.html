@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RHCREVPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8RHCREVPG');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG12 How (not) to use the EEG</title>
+<link href = "EEG12_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG12_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG12: How (not) to use the EEG</h1>
+
+
+<br>
+<br>
+
+
+
+<form id="question1" name="question1">
+<p><b>Q1. A colleague of yours evaluates a patient with some abnormal movements. Your colleague suspicion for seizures is low, but, "to be sure", your colleague decides
+ to perform a routine EEG to "rule out epilepsy". The EEG results come back normal. Your colleague states: "we ruled out epilepsy". Your best response is:</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> Definitively! We ruled out epilepsy<br>
+<input type="radio" id="q1" name="question" value="b"> No. We did not rule out epilepsy<br>
+<input id="buttonQ1" type="button" value="Done!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question2" name="question2">
+<p><b>Q2. Your colleague wants to make "completely sure" that "epilepsy is ruled out" and, therefore, performs a long-term video-EEG for 10 days.
+ The EEG during those 10 days is completely normal. Your colleague states: "we definitively ruled out epilepsy". Your best response is:</b></p>
+<br>
+<input type="radio" id="q2" name="question" value="a"> Definitively! We ruled out epilepsy<br>
+<input type="radio" id="q2" name="question" value="b"> No. We did not rule out epilepsy<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<h2><b>DIAGNOSIS OF EPILEPSY</b></h2>
+<br>
+<p><a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>The diagnosis of seizures is a clinical diagnosis.
+ The diagnosis of epilepsy is a clinical diagnosis.</a> Sometimes an EEG can help make a diagnosis of epilepsy <a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>(see Table 2)</a> in the right clinical context, but that it is.
+ Despite the fact that, in certain environments with a poor understanding of epilepsy, it is common practice to "rule out epilepsy" with an EEG,
+ there is no such a thing as "ruling out epilepsy" with an EEG.</p>
+
+
+<br>
+<br>
+
+
+<form id="question3" name="question3">
+<p><b>Q3. You find your colleague some time later. Your colleague is excited because a new prolonged EEG in the patient captured 5 of the clinical events under question,
+ but no EEG pattern suggestive of seizures was found during these episodes. Now your colleague proudly says: "we finally ruled out that these are seizures" and
+ "we finally ruled out epilepsy" in this patient. Your best response is:</b></p>
+<br>
+<input type="radio" id="q3" name="question" value="a"> Definitively! We ruled out seizures. We ruled out epilepsy<br>
+<input type="radio" id="q3" name="question" value="b"> No. We did not rule out seizures. We did not rule out epilepsy<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<p><a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>The diagnosis of seizures is a clinical diagnosis.
+ The diagnosis of epilepsy is a clinical diagnosis.</a> Sometimes an EEG can help make a diagnosis of epilepsy <a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>(see Table 2)</a> in the right clinical context, but that it is.
+ There is no such a thing as "ruling out (focal) seizures" or "ruling out epilepsy" with an EEG.</p>
+
+
+<br>
+<br>
+
+
+<form id="question4" name="question4">
+<p><b>Q4. You find your colleague (again). Your colleague is excited because your colleague just diagnosed a different patient with epilepsy.
+ The patient was a young man who presented with what appeared to be a syncope. The patient passed out in a context which highly suggested a
+ vasovagal syncope. However, your colleague "to be sure" performed an EEG and the EEG showed interictal epileptiform discharges. Your colleague
+ diagnosed the patient with epilepsy and started him on antiseizure medications. Your colleague is extremely proud of it. Your best response is:</b></p>
+<br>
+<input type="radio" id="q4" name="question" value="a"> Great job. Congratulations<br>
+<input type="radio" id="q4" name="question" value="b"> You should review the definition of epilepsy. Your patient does not meet a diagnosis of epilepsy and should not be on antiseizure medications<br>
+<input id="buttonQ4" type="button" value="Done!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>INTERICTAL EPILEPTIFORM ACTIVITY</b></h2>
+<br>
+<p><a href='https://pubmed.ncbi.nlm.nih.gov/8082631/' target='_blank'>Interictal epileptiform activity occurs in (a small proportion of) persons who never had seizures and will
+ never have seizures.</a> Ordering routine EEGs on patients with events which are not seizures will not clarify much. Interictal epileptiform activity in this
+ context will probably represent <a href='https://pubmed.ncbi.nlm.nih.gov/15652731/' target='_blank'>an incidental finding which should not be treated.</a> Remember:
+ tests cannot replace a proper clinical history. <br><br>The first step in diagnosing seizures and epilepsy is taking a proper clinical history, the second
+ step in diagnosing seizures and epilepsy is taking a proper clinical history, the third step in diagnosing seizures and epilepsy is taking a proper clinical history.
+ Only after making sure that you took a proper clinical history and made a proper physical exam, ordering an EEG (or not ordering an EEG) should include answers
+ to the questions: how the EEG will contribute to the diagnosis? is the proper EEG a routine EEG (likely to capture interictal abnormalities, but unlikely to
+ capture ictal events) or a prolonged EEG (more likely to catpure ictal events)? if the EEG shows interictal discharges, how would that change (or not) the diagnosis and treatment?</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question5" name="question5">
+<p><b>Q5. You find your colleague (again) some time later. A patient presented with a seizure in the context of cocaine consumption.
+ The event, by your colleague's description, appeared to be a seizure. Your colleague is excited because your colleague made the
+ diagnosis of "seizure disorder" and started the patient on antiseizure medications "to be safe". When you ask your colleague what is meant
+ by "seizure disorder", your colleague answers "the patient had a seizure, the patient has a seizure disorder, the patient needs antiseizure
+ medications". Your colleague is extremely proud of such a feat of clinical skills. Your best response is:</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> Great job. Congratulations<br>
+<input type="radio" id="q1" name="question" value="b"> You should review the definition of epilepsy. Your patient does not meet a diagnosis of epilepsy and should not be on antiseizure medications<br>
+<input id="buttonQ5" type="button" value="Done!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<br>
+<p id = "afterQ5_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2><b>SUMMARY</b></h2>
+<p><b>EEG is a very helpful test. However, EEG is also a test with many limitations. EEGs do not "rule out seizures". EEGs do not "rule out
+ epilepsy". Interictal discharges on EEG can happen in persons who never had a seizure and will never have a seizure. Therefore,
+ it is surprising that EEGs are used in certain environments to "rule out seizures", to "rule out epilepsy", or to make a diagnosis of
+ epilepsy when interictal epileptiform are found (regardless of clinical context). The popularity of the term "seizure disorder" is particularly
+ worrying because it directly leads to patient harm (antiseizure medications in patients who do not need them or incorrect treatment duration in patients
+ who do need them).<br><br>Your colleague in the questions above represented
+ some of the most common misconceptions in the use of EEG. Unfortunately, these misconceptions harm patients because: 1) there are patients
+ who have epilepsy, but their epilepsy is "ruled out" by a normal EEG and, therefore, these patients do not receive the antiseizure medications
+ they need, sometimes for years and 2) there are patients who have not epilepsy, but the finding of interictal epileptiform activity makes them
+ receive antiseizure medications they do not need, sometimes for years. <br><br> Make sure you understand these simple but powerful concepts
+ and do not fall into the common mistakes your colleague fell into.</b><br>
+
+<br>
+<br>
+<br>
+<br>
+
+</body>
+
+</html>
