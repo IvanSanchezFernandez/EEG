@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RHCREVPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8RHCREVPG');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG13 Yet another quiz</title>
+<link href = "EEG13_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG13_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG13: Yet another quiz</h1>
+<p>At this point you have learned most of the basics of EEG. Let's do a quiz to help solidify all you have learned so far! You will also learn a few new things!</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question1" name="question1">
+<p><b>Q1. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q1_1" src="EEG13_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q1a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q1b" name="question" value="b"> This EEG segment belongs to stage II sleep<br>
+<input type="checkbox" id="q1c" name="question" value="c"> This EEG segment belongs to stage I sleep<br>
+<input type="checkbox" id="q1d" name="question" value="d"> This EEG segment belongs to wakefulness<br>
+<input type="checkbox" id="q1e" name="question" value="e"> This EEG segment has focal slowing<br>
+<input type="checkbox" id="q1f" name="question" value="f"> This EEG segment has epileptiform activity<br>
+<input id="buttonQ1" type="button" value="Done!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ1_picture_2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture">
+<br>
+<figure>
+<img id="answerQ1_picture_3">
+</figure>
+<br clear="all" /></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question2" name="question2">
+<p><b>Q2. While reading an EEG of a 6 year-old child you find the segments below. Check all the correct statements:</b></p>
+<figure>
+	<img id="Q2_1" src="EEG13_img/Q2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+	<img id="Q2_1" src="EEG13_img/Q2.2.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q2a" name="question" value="a"> There is epileptiform activity in these segments<br>
+<input type="checkbox" id="q2b" name="question" value="b"> There is no epileptiform activity in these segments<br>
+<input type="checkbox" id="q2c" name="question" value="c"> This EEG segment belongs to stage III sleep<br>
+<input type="checkbox" id="q2d" name="question" value="d"> I would not be surprised if absence seizures appear in this EEG<br>
+<input type="checkbox" id="q2e" name="question" value="e"> I would not be surprised if tonic seizures appear in this EEG<br>
+<input type="checkbox" id="q2f" name="question" value="f"> There is generalized continuous slowing<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<figure>
+<img id="answerQ2_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question3" name="question3">
+<p><b>Q3. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q3_1" src="EEG13_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q3a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q3b" name="question" value="b"> There is continuous generalized slowing<br>
+<input type="checkbox" id="q3c" name="question" value="c"> There is continuous focal slowing<br>
+<input type="checkbox" id="q3d" name="question" value="d"> This EEG segment belongs to REM sleep<br>
+<input type="checkbox" id="q3e" name="question" value="e"> There are C3 spikes<br>
+<input type="checkbox" id="q3f" name="question" value="f"> There are O2 spikes<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<figure>
+<img id="answerQ3_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>Q4. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q4_1" src="EEG13_img/Q4.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q4a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q4b" name="question" value="b"> This EEG segment belongs to stage II sleep<br>
+<input type="checkbox" id="q4c" name="question" value="c"> The posterior dominant rhythm is approximately 6 Hz<br>
+<input type="checkbox" id="q4d" name="question" value="d"> The posterior dominant rhythm is approximately 10 Hz<br>
+<input type="checkbox" id="q4e" name="question" value="e"> There are posterior slow waves of youth<br>
+<input type="checkbox" id="q4f" name="question" value="f"> There is blinking artifact<br>
+<input id="buttonQ4" type="button" value="Done!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<figure>
+<img id="answerQ4_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question5" name="question5">
+<p><b>Q5. While you are performing photic stimulation on a patient you find the following EEG response. Select all correct statements:</b></p>
+<figure>
+	<img id="Q5_1" src="EEG13_img/Q5.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q5a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q5b" name="question" value="b"> If you see this EEG, quickly call the rapid response team at your hospital<br>
+<input type="checkbox" id="q5c" name="question" value="c"> If the patient closes his/her eyes the response will dissappear<br>
+<input type="checkbox" id="q5d" name="question" value="d"> This is called photoparoxysmal response<br>
+<input type="checkbox" id="q5e" name="question" value="e"> This EEG segment belongs to wakefulness<br>
+<input type="checkbox" id="q5f" name="question" value="f"> This EEG segment has epileptiform activity on it<br>
+<input id="buttonQ5" type="button" value="Done!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<p id = "afterQ5_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question6" name="question6">
+<p><b>Q6. The patient from question 5, just a few seconds after photic stimulation, puts on a pair of glasses and repeats photic stimulation again.
+ Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q6_1" src="EEG13_img/Q6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q6a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q6b" name="question" value="b"> The disappearance of the photoparoxysmal response with glasses means that the patient has a refractive defect<br>
+<input type="checkbox" id="q6c" name="question" value="c"> Antiepileptic glasses like these should be applied to all patients with epilepsy<br>
+<input type="checkbox" id="q6d" name="question" value="d"> The glasses probably have a color filter<br>
+<input type="checkbox" id="q6e" name="question" value="e"> In this patient, wearing those glasses might reduce the risk of seizures<br>
+<input type="checkbox" id="q6f" name="question" value="f"> Different patients have different color sensitivity in photic stimulation<br>
+<input id="buttonQ6" type="button" value="Done!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+<br>
+<p id = "afterQ6_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question7" name="question7">
+<p><b>Q7. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q7_1" src="EEG13_img/Q7.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q7a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q7b" name="question" value="b"> This EEG segment has generalized spike-wave complexes<br>
+<input type="checkbox" id="q7c" name="question" value="c"> This EEG segment has focal epileptiform discharges<br>
+<input type="checkbox" id="q7d" name="question" value="d"> This EEG segment contains vertex waves<br>
+<input type="checkbox" id="q7e" name="question" value="e"> This EEG segment contains sleep spindles<br>
+<input type="checkbox" id="q7f" name="question" value="f"> This EEG segment has no epileptiform activity on it<br>
+<input id="buttonQ7" type="button" value="Done!" onclick="checkQ7();">
+</form>
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+<br>
+<figure>
+<img id="answerQ7_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ7_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ7_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ7_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question8" name="question8">
+<p><b>Q8. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q8_1" src="EEG13_img/Q8.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q8a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q8b" name="question" value="b"> This EEG segment belongs to stage I sleep<br>
+<input type="checkbox" id="q8c" name="question" value="c"> This EEG segment belongs to wakefulness<br>
+<input type="checkbox" id="q8d" name="question" value="d"> This EEG segment contains vertex waves<br>
+<input type="checkbox" id="q8e" name="question" value="e"> This EEG segment contains epileptiform discharges in the centrotemporal region<br>
+<input type="checkbox" id="q8f" name="question" value="f"> This EEG segment contains epileptiform discharges in the frontal region<br>
+<input id="buttonQ8" type="button" value="Done!" onclick="checkQ8();">
+</form>
+
+<div id="after_submitQ8">
+<p id="answerQ8"></p>
+<br>
+<figure>
+<img id="answerQ8_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ8_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ8_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question9" name="question9">
+<p><b>Q9. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q9_1" src="EEG13_img/Q9.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q9a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q9b" name="question" value="b"> The deflections in the frontal regions are sharp waves<br>
+<input type="checkbox" id="q9c" name="question" value="c"> This EEG segment belongs to wakefulness<br>
+<input type="checkbox" id="q9d" name="question" value="d"> This EEG segment contains vertex waves<br>
+<input type="checkbox" id="q9e" name="question" value="e"> This EEG segment belongs to stage II sleep<br>
+<input type="checkbox" id="q9f" name="question" value="f"> This EEG segment has epileptiform activity on it<br>
+<input id="buttonQ9" type="button" value="Done!" onclick="checkQ9();">
+</form>
+
+<div id="after_submitQ9">
+<p id="answerQ9"></p>
+<br>
+<p id = "afterQ9_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question10" name="question10">
+<p><b>Q10. Regarding this EEG segment from a 9 year-old boy, check all the correct statements:</b></p>
+<figure>
+	<img id="Q10_1" src="EEG13_img/Q10.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q10a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q10b" name="question" value="b"> There is bitemporal slowing<br>
+<input type="checkbox" id="q10c" name="question" value="c"> This EEG segment belongs to wakefulness<br>
+<input type="checkbox" id="q10d" name="question" value="d"> This EEG segment contains vertex waves<br>
+<input type="checkbox" id="q10e" name="question" value="e"> There is generalized slowing<br>
+<input type="checkbox" id="q10f" name="question" value="f"> This EEG segment contains epileptiform discharges in the frontal region<br>
+<input id="buttonQ10" type="button" value="Done!" onclick="checkQ10();">
+</form>
+
+<div id="after_submitQ10">
+<p id="answerQ10"></p>
+<br>
+<figure>
+<img id="answerQ10_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ10_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ10_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ10_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<h2><b>SUMMARY</b></h2>
+<p><b>After reviewing this post, you have solidified some of the normal and abnormal EEG features that you learned in prior posts.</b></p>
+<br>
+
+<p><b>In particular, you have seen that slowing can be focal or generalized (or both at the same time in the same moment). Generalized slowing
+ is suggestive of a diffuse encephalopathy of non-specific etiology. Focal slowing is suggestive of a functional or structural lesion in the region
+ affected by the slowing.</b></p>
+
+<br>
+
+<p><b>You also learned about OIRDA (what does OIRDA stands for?) and the association of OIRDA with a frequent type of childhood epilepsy (in what
+ childhood epilepsy does OIRDA appear?). As another type of "special slowing", you learned about posterior slow waves of youth (a normal variant seen in youth).
+ In addition, you are able to localize epileptiform discharges better, even when they appear at the "end of chain".<br><br>
+Keep learning!</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
