@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RHCREVPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8RHCREVPG');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG14 A little bit more of quiz</title>
+<link href = "EEG14_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG14_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG14: A little bit more of quiz</h1>
+<p>Questions are a great way to detect and remediate gaps in your knowledge and to solidify areas where your knowledge is already strong. Let's do another quiz!</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question1" name="question1">
+<p><b>Q1. Regarding the EEG segment below, what is highlighted by the red arrows and the purple arrows?:</b></p>
+<figure>
+	<img id="Q1_1" src="EEG14_img/Q1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q1a" name="question" value="a"> Red arrows: spikes, purple arrows: polyspikes, EEG segment belongs to stage II sleep<br>
+<input type="checkbox" id="q1b" name="question" value="b"> Red arrows: posterior slow waves of youth, purple arrows: muscle artifact, EEG segment belongs to wakefulness<br>
+<input type="checkbox" id="q1c" name="question" value="c"> Red arrows: lambda waves, purple arrows: polyspikes, EEG segment belongs to wakefulness<br>
+<input type="checkbox" id="q1d" name="question" value="d"> Red arrows: POSTS, purple arrows: polyspikes, EEG segment belongs to stage I sleep<br>
+<input type="checkbox" id="q1e" name="question" value="e"> Red arrows: seizures, purple arrows: eyelid blinking artifact, EEG segment belongs to wakefulness<br>
+<input type="checkbox" id="q1f" name="question" value="f"> Red arrows: sleep spindles, purple arrows: polyspikes, EEG segment belongs to stage II sleep<br>
+<input id="buttonQ1" type="button" value="Done!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<figure>
+<img id="answerQ1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ1_picture_2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ1_picture_3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ1_picture">
+</p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question2" name="question2">
+<p><b>Q2. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q2_1" src="EEG14_img/Q2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q2a" name="question" value="a"> There is epileptiform activity in this segment<br>
+<input type="checkbox" id="q2b" name="question" value="b"> There is no epileptiform activity in this segment<br>
+<input type="checkbox" id="q2c" name="question" value="c"> There is a convulsive seizure in this segment<br>
+<input type="checkbox" id="q2d" name="question" value="d"> There are 3 Hz generalized spike-wave complexes, but no convulsive seizure in this segment<br>
+<input type="checkbox" id="q2e" name="question" value="e"> There are at least two different types of artifact in this EEG segment<br>
+<input type="checkbox" id="q2f" name="question" value="f"> This EEG segment belongs to stage III sleep<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question3" name="question3">
+<p><b>Q3. Regarding the EEG segments below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q3_1" src="EEG14_img/Q3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+	<img id="Q3_2" src="EEG14_img/Q3.2.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q3a" name="question" value="a"> These EEG segments belong to stage III sleep<br>
+<input type="checkbox" id="q3b" name="question" value="b"> There is movement artifact<br>
+<input type="checkbox" id="q3c" name="question" value="c"> There are spike-wave complexes<br>
+<input type="checkbox" id="q3d" name="question" value="d"> There is a pattern with some evolution of frequency, amplitude, morphology, and spread over time<br>
+<input type="checkbox" id="q3e" name="question" value="e"> These EEG segments show focal seizures, most likely coming from the right hemisphere<br>
+<input type="checkbox" id="q3f" name="question" value="f"> These EEG segments belong to stage II sleep<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>Q4. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q4_1" src="EEG14_img/Q4.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q4a" name="question" value="a"> There is muscle artifact<br>
+<input type="checkbox" id="q4b" name="question" value="b"> There is rhythmic focal slowing<br>
+<input type="checkbox" id="q4c" name="question" value="c"> These findings are suggestive of a functional or structural lesion in the occipital region bilaterally<br>
+<input type="checkbox" id="q4d" name="question" value="d"> This EEG segment contains a seizure<br>
+<input type="checkbox" id="q4e" name="question" value="e"> There are posterior slow waves of youth<br>
+<input type="checkbox" id="q4f" name="question" value="f"> There is blinking artifact<br>
+<input id="buttonQ4" type="button" value="Done!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<figure>
+<img id="answerQ4_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ4_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question5" name="question5">
+<p><b>Q5. While reading an EEG you find occipital intermittent rhythmic delta activity (OIRDA). In what type of epilepsy or epilepsies is OIRDA classically found?</b></p>
+<br>
+<input type="checkbox" id="q5a" name="question" value="a"> Temporal lobe epilepsy<br>
+<input type="checkbox" id="q5b" name="question" value="b"> Occipital epilepsy of Panayiotopoulos<br>
+<input type="checkbox" id="q5c" name="question" value="c"> Juvenile myoclonic epilepsy<br>
+<input type="checkbox" id="q5d" name="question" value="d"> Occipital epilepsy of Gastaut<br>
+<input type="checkbox" id="q5e" name="question" value="e"> Childhood absence epilepsy<br>
+<input type="checkbox" id="q5f" name="question" value="f"> West syndrome<br>
+<input id="buttonQ5" type="button" value="Done!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<figure>
+<img id="answerQ5_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ5_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question6" name="question6">
+<p><b>Q6. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q6_1" src="EEG14_img/Q6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q6a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q6b" name="question" value="b"> The red arrows point towards polyspikes<br>
+<input type="checkbox" id="q6c" name="question" value="c"> This segment belongs to stage III sleep<br>
+<input type="checkbox" id="q6d" name="question" value="d"> The red arrows point to a finding that is seen in old people and is a normal variant<br>
+<input type="checkbox" id="q6e" name="question" value="e"> The red arrows point to a finding that is seen in old people and is abnormal<br>
+<input type="checkbox" id="q6f" name="question" value="f"> The posterior dominant rhythm in this patient is around 10 Hz<br>
+<input id="buttonQ6" type="button" value="Done!" onclick="checkQ6();">
+</form>
+
+<div id="after_submitQ6">
+<p id="answerQ6"></p>
+<br>
+<p id = "afterQ6_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question7" name="question7">
+<p><b>Q7. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q7_1" src="EEG14_img/Q7.1.png">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+	<img id="Q7_1" src="EEG14_img/Q7.2.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q7a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q7b" name="question" value="b"> This EEG segment has generalized spike-wave complexes<br>
+<input type="checkbox" id="q7c" name="question" value="c"> This EEG segment has focal epileptiform discharges<br>
+<input type="checkbox" id="q7d" name="question" value="d"> This EEG segment contains vertex waves<br>
+<input type="checkbox" id="q7e" name="question" value="e"> This EEG segment contains sleep spindles<br>
+<input type="checkbox" id="q7f" name="question" value="f"> This EEG segment has no epileptiform activity on it<br>
+<input id="buttonQ7" type="button" value="Done!" onclick="checkQ7();">
+</form>
+
+<div id="after_submitQ7">
+<p id="answerQ7"></p>
+<br>
+<figure>
+<img id="answerQ7_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ7_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ7_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question8" name="question8">
+<p><b>Q8. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q8_1" src="EEG14_img/Q8.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q8a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q8b" name="question" value="b"> This EEG segment belongs to stage I sleep<br>
+<input type="checkbox" id="q8c" name="question" value="c"> This EEG segment belongs to wakefulness<br>
+<input type="checkbox" id="q8d" name="question" value="d"> This EEG segment contains vertex waves<br>
+<input type="checkbox" id="q8e" name="question" value="e"> This EEG segment contains epileptiform discharges in the centrotemporoparietal region<br>
+<input type="checkbox" id="q8f" name="question" value="f"> This EEG segment contains epileptiform discharges in the frontal region<br>
+<input id="buttonQ8" type="button" value="Done!" onclick="checkQ8();">
+</form>
+
+<div id="after_submitQ8">
+<p id="answerQ8"></p>
+<br>
+<figure>
+<img id="answerQ8_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ8_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question9" name="question9">
+<p><b>Q9. Regarding the EEG segment below, check all the correct statements:</b></p>
+<figure>
+	<img id="Q9_1" src="EEG14_img/Q9.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q9a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q9b" name="question" value="b"> There are irregular frontal-predominant generalized 3-4 Hz spike-wave complexes for approximately 4 seconds<br>
+<input type="checkbox" id="q9c" name="question" value="c"> This pattern can represent a seizure<br>
+<input type="checkbox" id="q9d" name="question" value="d"> This pattern can represent an interictal finding<br>
+<input type="checkbox" id="q9e" name="question" value="e"> This pattern is a normal variant<br>
+<input type="checkbox" id="q9f" name="question" value="f"> This pattern is typically seen in temporal lobe epilepsy<br>
+<input id="buttonQ9" type="button" value="Done!" onclick="checkQ9();">
+</form>
+
+<div id="after_submitQ9">
+<p id="answerQ9"></p>
+<br>
+<figure>
+<img id="answerQ9_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQ9_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ9_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<form id="question10" name="question10">
+<p><b>Q10. Regarding these consecutive EEG segments, check all the correct statements:</b></p>
+<figure>
+	<img id="Q10_1" src="EEG14_img/Q10.1.png">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+	<img id="Q10_2" src="EEG14_img/Q10.2.png">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+	<img id="Q10_3" src="EEG14_img/Q10.3.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q10a" name="question" value="a"> This is a normal segment of EEG<br>
+<input type="checkbox" id="q10b" name="question" value="b"> There is a pattern with evolution in frequency<br>
+<input type="checkbox" id="q10c" name="question" value="c"> There is a pattern with evolution in amplitude<br>
+<input type="checkbox" id="q10d" name="question" value="d"> There is a pattern with evolution in wave morphology<br>
+<input type="checkbox" id="q10e" name="question" value="e"> There is a pattern with evolution in spatial spread<br>
+<input type="checkbox" id="q10f" name="question" value="f"> This EEG segment contains a seizure<br>
+<input id="buttonQ10" type="button" value="Done!" onclick="checkQ10();">
+</form>
+
+<div id="after_submitQ10">
+<p id="answerQ10"></p>
+<br>
+<p id = "afterQ10_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<h2><b>SUMMARY</b></h2>
+<p><b>At this point you have seen the most common features you will find during EEG reading.</b></p>
+<br>
+
+<p><b>In particular, you have seen common normal variants, epileptiform discharges
+(and normal features which resembles epileptiform discharges), and seizures (and patterns which resemble seizures).
+Now that you have a broad exposure to many elements in the EEG, let's try to make things a little bit more systematic.<br><br>
+
+<br>
+
+Keep learning!</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
