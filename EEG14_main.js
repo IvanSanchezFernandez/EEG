@@ -180,7 +180,7 @@ function checkQ7() {
 
 	} else {
 		document.getElementById("after_submitQ7").style.visibility = "visible";
-		document.getElementById("answerQ7").innerHTML = "Not correct.<br><br>Here you have details, a potential explanation of what you see, and the same segment in another montage (linked ears).";
+		document.getElementById("answerQ7").innerHTML = "Not correct.<br><br>Here you have details, a potential explanation of what you see, and the same segment in another montage (bipolar transverse and referential to Cz below).";
 		document.getElementById("after_submitQ7").style.background = "red";
 		document.getElementById("answerQ7_picture").src = "EEG14_img/Q7.3.png";
 		document.getElementById("answerQ7_picture2").src = "EEG14_img/Q7.4.png";
