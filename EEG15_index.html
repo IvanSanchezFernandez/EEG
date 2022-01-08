@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RHCREVPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8RHCREVPG');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG15 Localization</title>
+<link href = "EEG15_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG15_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG15: Localization</h1>
+<p>Congratulations! At this point you are not a beginner anymore. You have the appropriate background to understand a crucial aspect of EEG reading: localization. The first step is to understand what we are actually seeing on EEG.</p>
+
+
+<br>
+<br>
+
+
+<form id="question1" name="question1">
+<p><b>Q1. Which one of the following best represents the source of the deflections seen on EEG?</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> Absolute voltage of the point below the electrode<br>
+<input type="radio" id="q1" name="question" value="b"> Changes in current intensity in the point below the electrode<br>
+<input type="radio" id="q1" name="question" value="c"> Changes in voltage between two points<br>
+<input id="buttonQ1" type="button" value="Done!" onclick="checkQ1();">
+</form>
+
+<div id="after_submitQ1">
+<p id="answerQ1"></p>
+<br>
+<br>
+<p id = "afterQ1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<h2>Montages</h2>
+<p>To understand localization you first need a good understanding of EEG montages.</p>
+
+
+<br>
+<br>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection1" src="EEG15_img/deflection1.png" width=1200px heigth=1000px>
+	<figcaption>Here is a segment of EEG. Let's see what we are seeing.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+<p>The EEG measures voltage. In particular, the EEG measures the difference in voltage between two electrodes.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection2" src="EEG15_img/deflection2.png" width=1200px heigth=1000px>
+	<figcaption>Bipolar montages (like this anterior-posterior bipolar montage) compare one electrode to the next electrode in the chain. For example, Fp1 is compared with F7 to measure the voltage Fp1-F7; F7 is compared with T7 to calculate the voltage F7-T7, and so on.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection3" src="EEG15_img/deflection3.png" width=1200px heigth=1000px>
+	<figcaption>This just means that the channel Fp1-F7 is just the voltage difference of Fp1 minus F7; the channel F7-T7 is just the voltage difference of F7 minus T7 and so on.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection4" src="EEG15_img/deflection4.png" width=1200px heigth=1000px>
+	<figcaption>As an aside, in an anterior-posterior bipolar montage, each electrode is compared with the electrode behind it (except, O1, Pz, and O2, which are end-of-chain electrodes and do not have any electrode behind them). Therefore, this montage is called...</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection5" src="EEG15_img/deflection5.png" width=1200px heigth=1000px>
+	<figcaption>...double banana montage. Yes, epileptologists have a lot of imagination (well, ... rarely, to be completely fair).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection6" src="EEG15_img/deflection6.png" width=1200px heigth=1000px>
+	<figcaption>Going back to what we are reading on EEG, let's take the example of the deflection in the red rounded rectangle. It is an upgoing deflection at Fp1-F7 and this means that, at that point, Fp1 has a more negative voltage than F7.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection7" src="EEG15_img/deflection7.png" width=1200px heigth=1000px>
+	<figcaption>If we assume that the difference in voltage between Fp1 and F7 is -70 microvolts (Fp1 is 70 microvolts more negative than F7 at that moment), then the deflection from baseline is 70 microvolts high and the deflection is going up (because the difference is negative).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+
+<p>Wait...Why do negative differences go up? It is just that the first companies creating electrophysiological machines decided that negative differences would be represented as upgoing deflections (and positive differences as downgoing deflections). There is no particular reason for it and it is not particularly intuitive, but it is too late to change it (and also, making it the other way around would also be as arbitrary as it is now). The first electrophysiological machine makers arbitrarily decided this convention for us.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection8" src="EEG15_img/deflection8.png" width=1200px heigth=1000px>
+	<figcaption>This deflection in the red rectangle goes down, which means that at the moment captured within the red rectangle, P7 is less negative (or more positive) than O1. Or O1 is more negative than P7 (if that is more intuitive). Remember that voltage is always a difference between points, not an absolute value at any point.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="deflection9" src="EEG15_img/deflection9.png" width=1200px heigth=1000px>
+	<figcaption>If we assume that the difference in voltage between P7 and O1 is +80 microvolts (P7 is 80 microvolts more positive than O1 at that moment), then the deflection from baseline is 80 microvolts high and the deflection is going down.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Bipolar montages do not have to be in an anterior-posterior direction. For example, transverse montages compare one electrode to the one lateral to it.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="transverse1" src="EEG15_img/transverse1.png" width=1200px heigth=1000px>
+	<figcaption>In this bipolar transverse montage electrodes are compared with electrodes to their right (except the rightmost electrodes, which are end of chain electrodes and do not have any electrode to their right). For example, F7 is compared to Fp1, Fp1 is compared to Fp2, and so on.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Different montages complement each other because the electrodes which are end-of-chain in one bipolar montage are typically not end-of-chain in another bipolar montage. For example, transverse bipolar montages are particularly helpful to look for phase reversals in electrodes which are end-of-chain in anterior-posterior bipolar montages. Transverse bipolar montages are also typically used during sleep, because they nicely show the symmetry of vertex waves, sleep spindles, and other sleep elements.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="transverse2" src="EEG15_img/transverse2.png" width=1200px heigth=1000px>
+	<figcaption>In this bipolar anterior-posterior montage, there is a spike-wave complex which appears bifrontal, but of higher amplitude in the right frontal region than in the left frontal region.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="transverse3" src="EEG15_img/transverse3.png" width=1200px heigth=1000px>
+	<figcaption>Seeing the same discharge in a transverse bipolar montage shows that the phase reversal is at Fp2.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Another bipolar montage is the circumferential montage, in which electrodes are compared to the next electrode forming a circle. The circumferential bipolar montage, as other bipolar montages allow a different perspective when comparing electrodes.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="circumferential1" src="EEG15_img/circumferential1.png" width=1200px heigth=1000px>
+	<figcaption>The comparisons of Fp1 to F7, F7 to T7, etc. form a circle.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="circumferential2" src="EEG15_img/circumferential2.png" width=1200px heigth=1000px>
+	<figcaption>Circumferential montage as shown in the prior figure.</figcaption></center>
+</figure>
+
+
+
+<br>
+<br>
+
+
+<p><b>And what is that referential thing?</b> A referential montage is based on the idea of using some electrode (or group of electrodes) that is (are) "electrically inactive": there should not be major deflections in the referential electrode(s). A common reference is Cz because it is in the midline far from head muscles and where epileptiform discharges or seizures are relatively rare.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="referentialCz1" src="EEG15_img/referentialCz1.png" width=1200px heigth=1000px>
+	<figcaption>In a referential montage, all electrodes are compared to the reference, which in this case, is Cz.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="referentialCz2" src="EEG15_img/referentialCz2.png" width=1200px heigth=1000px>
+	<figcaption>Example of a referential montage to Cz, where all electrodes are compared to Cz. It is important to realize that, if there are epileptiform discharges or seizures in the area near Cz, then Cz would not be a good reference in that case. The reference should be an electrode (or group of electrodes) that is not particularly active. The best reference varies from patient to patient and even in the same patient from situation to situation.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="question2" name="question2">
+<p><b>Q2. Select all reasonable references below:</b></p>
+<br>
+<input type="checkbox" id="q2a" name="question" value="a"> Nose<br>
+<input type="checkbox" id="q2b" name="question" value="b"> Average of both ears<br>
+<input type="checkbox" id="q2c" name="question" value="c"> Electrode on the back of the neck<br>
+<input type="checkbox" id="q2d" name="question" value="d"> Average of all electrodes on the head<br>
+<input type="checkbox" id="q2e" name="question" value="e"> Electrode in the left thorax close to the heart<br>
+<input id="buttonQ2" type="button" value="Done!" onclick="checkQ2();">
+</form>
+
+<div id="after_submitQ2">
+<p id="answerQ2"></p>
+<br>
+<p id = "afterQ2_picture"></p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="question3" name="question3">
+<p><b>Q3. Why does the EEG display electrical activity generated in the brain at all? Electrical activity of much higher voltage (for example, electrical activity generated in the heart or electrical activity generated by machines around the patient) should contaminate and obscure the tiny electrical activity coming from the brain, right?</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> The electrical activity coming from the brain is actually of higher voltage than the electrical activity coming from the heart or from machines around the patient<br>
+<input type="radio" id="q1" name="question" value="b"> The electrical currents generated in the brain, although tiny, generate a difference in voltage between different electrodes in the scalp. In contrast, electrical currents generated in the heart or in machines around the patient, although of much higher voltage, arrive at the electrodes on the scalp with similar voltage, and the difference in voltage between the electrodes is zero (cancels out)<br>
+<input type="radio" id="q1" name="question" value="c"> The electrical activity generated in the brain is of completely different frequencies than the electrical activity coming from the heart, from machines around the patient, or from any other noise<br>
+<input id="buttonQ3" type="button" value="Done!" onclick="checkQ3();">
+</form>
+
+<div id="after_submitQ3">
+<p id="answerQ3"></p>
+<br>
+<br>
+<p id = "afterQ3_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<h2>Where does the electricity comes from?</h2>
+
+<p>We learned above that EEG is just measuring a difference in voltage. However, where does this electricity come from?</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP1" src="EEG15_img/EPSP1.png" width=1200px heigth=1000px>
+	<figcaption>Let's imagine a cortical neuron which receives several inputs from other neurons into its dendrites and soma.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP2" src="EEG15_img/EPSP2.png" width=1200px heigth=1000px>
+	<figcaption>When presynaptic neurons release neurotransmitters in the synapses, these bind in postsynaptic receptors. This causes the opening of ion channels, which allows possitively charged ions (typically sodium) into the neuron: an excitatory postsynaptic potential.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP3" src="EEG15_img/EPSP3.png" width=1200px heigth=1000px>
+	<figcaption>The inward flow of positive ions (typically sodium) into the neuron leaves the extracellular space around the neural soma and dendrites relatively negative. In fact, during excitatory postsynaptic potentials, the extracellular space aorund the soma and dendrites is relatively negative not only with respect to the interior of the neuron, but also with respect to the extracellular space around the axon.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP4" src="EEG15_img/EPSP4.png" width=1200px heigth=1000px>
+	<figcaption>A neuron can be conceptualized (in a very symplistic form) as a vertical structure perpendicular to the surface of the brain. When there is an excitatory postsynaptic potential in the soma and dendrites, the neuron can be seen as a very small electrical dipole with a negative pole close to the brain surface and a positive pole close to the depth of the brain.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP5" src="EEG15_img/EPSP5.png" width=1200px heigth=1000px>
+	<figcaption>When these very small electrical dipoles add up (several thousands of neurons in the same area of the brain have excitatory postsynaptic potential at the same time)...</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP6" src="EEG15_img/EPSP6.png" width=1200px heigth=1000px>
+	<figcaption>...they are equivalent to a large electrical dipole that can cause macroscopic electrical changes in the surface of the brain (still tiny, but detectable: in the order of several microvolts).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP6" src="EEG15_img/EPSP6.png" width=1200px heigth=1000px>
+	<figcaption>If you assume that the brain is a perfect sphere and all neurons in the cerebral cortex are only oriented perpendicular to the brain surface, then if you find a negative deflection on your scalp EEG, you can assume that the generator of that surface negativity is a dipole as shown in the figure.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="EPSP7" src="EEG15_img/EPSP7.png" width=1200px heigth=1000px>
+	<figcaption>There is a gradient in the electrical field with less and less scalp negativity as you get further away from the dipole. Therefore, the electrical dipole generating the negative deflection is located just below the point of maximum negativity on the scalp. Great. This is so intuitive: maximum negativity on the scalp EEG means that the generator of that negativity is right below the maximum negativity.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+
+
+<form id="question4" name="question4">
+<p><b>Q4. Are human brains perfect spheres in which all cortical neurons are perpendicular to the surface of the brain?</b></p>
+<br>
+<input type="radio" id="q1" name="question" value="a"> Yes<br>
+<input type="radio" id="q1" name="question" value="b"> No<br>
+<input type="radio" id="q1" name="question" value="c"> In reality, human brains are perfect spheres and all cortical neurons are perpendicular to the surface of the brain, but there is a conspiracy and the government tries to hide the truth from us by creating and disseminating anatomy books with fake brains on them<br>
+<input id="buttonQ4" type="button" value="Done!" onclick="checkQ4();">
+</form>
+
+<div id="after_submitQ4">
+<p id="answerQ4"></p>
+<br>
+<br>
+<p id = "afterQ4_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2>Localization</h2>
+
+<p>Now we know what we are measuring on EEG: <b>differences in voltage between scalp electrodes</b>, how we are measuring it: <b>using different EEG montages</b>, and what it means: <b>an underlying electrical dipole that, in many cases, is perpendicular to the surface of the scalp and roughly located below the point of maximum scalp negativity</b>. Equipped with all that knowledge, we can now understand how to localize deflections on the EEG.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization1" src="EEG15_img/localization1.png" width=1200px heigth=1000px>
+	<figcaption>If you look at the channel P4-O2, there is an upgoing spike. As you know, this means that the voltage difference P4 minus O2 is negative (negative deflection goes up). This means that, at the moment of the spike, P4 has a more negative voltage than O2. If you look at the channel C4-P4, there is a downgoing spike. This means that the difference C4 minus P4 is positive (or said in a different way, that C4 is more positive than P4 or, equivalently, that P4 is more negative than C4).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization2" src="EEG15_img/localization2.png" width=1200px heigth=1000px>
+	<figcaption>Based on that information, you can think that the spike is some kind of field that, in the anterior-posterior direction, has maximum negativity at P4 and that negativity progressively becomes less pronounced both towards C4 and towards O2.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization1" src="EEG15_img/localization1.png" width=1200px heigth=1000px>
+	<figcaption>If you look at the channel P8-O2, there is an upgoing spike. As you know, this means that the voltage difference P8 minus O2 is negative (negative deflection goes up). This means that, at the moment of the spike, P8 has a more negative voltage than O2. If you look at the channel T8-P8, there is a downgoing spike. This means that the difference T8 minus P8 is positive (or said in a different way, that T8 is more positive than P8 or, equivalently, that P8 is more negative than T8). Following the same logic, T8 is more negative than F8. In a bipolar montage, the point where a spike points to each other is called a "phase reversal" and it is the point of maximum negativity (T8 is the phase reversal in the F8-T8-P8 chain).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization3" src="EEG15_img/localization3.png" width=1200px heigth=1000px>
+	<figcaption>This additional information allows us to localize better. There is some kind of field that, in the anterior-posterior direction, has maximum negativity at P4 and P8 and that negativity progressively becomes less pronounced both towards C4 and towards O2 and also towards T8 and F8 and towards O2. Something like the field in the image above.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization4" src="EEG15_img/localization4.png" width=1200px heigth=1000px>
+	<figcaption>Once you localized the spike in the anterior-posterior direction with the anterior-posterior bipolar montage, you might want to localize in the transverse direction with the transverse bipolar montage. This is the same EEG segment on transverse bipolar montage. If you look at the channel P4-P8, there is an upgoing spike. This means that the voltage difference P4 minus P8 is negative (negative deflection goes up). This means that, at the moment of the spike, P4 has a more negative voltage than P8. If you look at the channel Pz-P4, there is a downgoing spike. This means that the difference Pz minus P4 is positive (or said in a different way, that Pz is more positive than P4 or, equivalently, that P4 is more negative than Pz).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization5" src="EEG15_img/localization5.png" width=1200px heigth=1000px>
+	<figcaption>This additional information allows us to localize better in the transverse direction. There is some kind of field that, in the transverse  direction, has maximum negativity at P4 and that negativity progressively becomes less pronounced both towards Pz and towards P8.</figcaption></center>
+</figure>
+
+
+
+<figure>
+	<center><img id="localization4" src="EEG15_img/localization4.png" width=1200px heigth=1000px>
+	<figcaption>If you look at the channel T8-A2, there is an upgoing spike. As you know, this means that the voltage difference T8 minus A2 is negative (negative deflection goes up). This means that, at the moment of the spike, T8 has a more negative voltage than A2. If you look at the channel C4-T8, there is a downgoing spike. This means that the difference C4 minus T8 is positive (or said in a different way, that C4 is more positive than T8 or, equivalently, that T8 is more negative than C4).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization6" src="EEG15_img/localization6.png" width=1200px heigth=1000px>
+	<figcaption>This additional information allows us to localize better in the transverse direction. There is some kind of field that, in the transverse  direction, has maximum negativity at P4 and T8 and that negativity progressively becomes less pronounced both towards Pz and towards P8 and also towards C4 and A2. Something like in the figure above.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization7" src="EEG15_img/localization7.png" width=1200px heigth=1000px>
+	<figcaption>In a referential montage (like the referential montage with a Cz reference above), the point of maximum negativity on scalp EEG is marked by the deflections with highest amplitude (voltage) on EEG. You can see that the point of maximum voltage during the spike is at T8, P8, and (to a lesser extent) P4. This is consistent with the cartoon field we estimated.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization8" src="EEG15_img/localization8.png" width=1200px heigth=1000px>
+	<figcaption>If you assume perfectly spherical brains with all neurons perpendicular to the brain surface you can conclude that the generator of that spike is a dipole located somewhere between T8, P8, and P4.</figcaption></center>
+</figure>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<p>What about seizures? You should localize seizures roughly the same way. Look at the deflections and estimate where the maximum negativity on scalp EEG is. Seizures are a succession of evolving deflections, so the localization varies with time. The localization of greatest interest in most seizures is the localization of the seizure onset.</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization9" src="EEG15_img/localization9.png" width=1200px heigth=1000px>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization10" src="EEG15_img/localization10.png" width=1200px heigth=1000px>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization11" src="EEG15_img/localization11.png" width=1200px heigth=1000px>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization12" src="EEG15_img/localization12.png" width=1200px heigth=1000px>
+	<figcaption>Following the deflections in the seizure you can think of a negative dipole with maximum negativity at F7/T7 that later spreads to involve F3 and even Fz. In this seizure, the maximum negativity is always in the F7/T7 region, but in other seizures the maximum negativity can migrate over time.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization13" src="EEG15_img/localization13.png" width=1200px heigth=1000px>
+	<figcaption>The seizure would look something like this with maximum negativity somewhere between F7, T7, and F3 with some spread and migration during the seizure.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization14" src="EEG15_img/localization14.png" width=1200px heigth=1000px>
+	<figcaption>Assuming a perfectly spherical brain, the dipole would look something like in the figure above with some spread and migration during the seizure.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>What about generalized seizures?</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization15" src="EEG15_img/localization15.png" width=1200px heigth=1000px>
+	<figcaption>Generalized seizures have a similarly negative voltage all over the scalp because they are generated in cortico-thalamo-cortical circuits. Therefore, they typically look quite the same in all EEG channels (typically more prominent in the frontal regions, though).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="localization16" src="EEG15_img/localization16.png" width=1200px heigth=1000px>
+	<figcaption>Assuming a perfectly spherical brain, the dipoles would look something like in the figure above.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<form id="question5" name="question5">
+<p><b>Q5. Regarding the EEG segment below, where do the rhythmic deflections localize to?</b></p>
+<figure>
+	<img id="Q5_1" src="EEG15_img/Q5.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="checkbox" id="q5a" name="question" value="a"> There might be a phase reversal at P7, suggesting that the maximum negativity is there<br>
+<input type="checkbox" id="q5b" name="question" value="b"> There might be a phase reversal at C3, suggesting that the maximum negativity is there<br>
+<input type="checkbox" id="q5c" name="question" value="c"> There might be a phase reversal at F8, suggesting that the maximum negativity is there<br>
+<input type="checkbox" id="q5d" name="question" value="d"> This electrical field does not make any sense<br>
+<input type="checkbox" id="q5e" name="question" value="e"> I feel unable to localize this rhythmic activity<br>
+<input id="buttonQ5" type="button" value="Done!" onclick="checkQ5();">
+</form>
+
+<div id="after_submitQ5">
+<p id="answerQ5"></p>
+<br>
+<figure>
+<img id="answerQ5_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQ5_picture">
+</p>
+</div>
+
+
+
+
+<br clear="all" />
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>SUMMARY</b></h2>
+<p><b>At this point you are ready to localize spikes, seizures, and any other deflection on EEG.</b></p>
+
+<p><b>True. This is only a rough localization based on scalp EEG. The reality of localization is that it is much more complicated (brains are not perfect spheres, neurons are not always perpendicular to the scalp surface) and it requires <a href='https://pubmed.ncbi.nlm.nih.gov/31019487/' target='_blank'>source localization</a>.<br><br>However, this rough localization will be extremely helpful most of the times and will make you understand better what you are seeing on EEG.<br><br>A final note: localization may appear extremely time-consuming. The reality is that it is complicated at the beginning, but it gets second nature and very fast the more you practice. Keep learning and localizing!</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
