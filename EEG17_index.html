@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8RHCREVPG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y8RHCREVPG');
+</script>
+
+
+
+
+<head>
+
+
+<title>EEG17 Normal variants</title>
+<link href = "EEG17_style.css" rel = "stylesheet">
+<link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel = "stylesheet">
+<script src = "EEG17_main.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>EEG17: Normal variants</h1>
+<p>Probably the most difficult part of reading EEGs is recognizing normal features. This often translates into unexperienced EEG readers calling some findings in the EEG as abnormal when they are actually normal. Unexperienced EEG readers tend to "overcall" (call anything that looks funny as abnormal) and this may lead to bad consequences for their patients. More experienced readers are able to recognize "abnormal looking" features in the EEG which are still normal. An important part of becoming an experienced EEG reader is recognizing normal variants: features in the EEG which look "abnormal", "funny", "unusual", but they are normal. Let's go for (some of) them!</p>
+
+
+<br>
+<br>
+
+
+<h2>Adults get away with this! (normal variants in adults)</h2>
+<p>There are many funny-looking features in the EEG of adults, which are completely normal.</p>
+
+
+<br>
+<br>
+
+
+<p>One of the most striking features of reading adult EEGs (at least for a pediatric neurologist) is the very low very poor sustained posterior dominant rhythm in a large proportion of adults.</p>
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="lowvoltagePDR1" src="EEG17_img/lowvoltagePDR1.png" width=1200px heigth=1000px>
+	<figcaption>Here is a segment of EEG of an adult. Look at the posterior dominant rhythm. It is small, it lasts very short, there is very little anterior-posterior rhythm...and it was the best posterior dominant rhythm of a 30 minutes EEG in which the patient closed his eyes and was relaxed.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="lowvoltagePDR2" src="EEG17_img/lowvoltagePDR2.png" width=1200px heigth=1000px>
+	<figcaption>Another example from another adult patient...this was also the best posterior dominant rhythm of a 30 minutes EEG in which the patient closed his eyes and was relaxed.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+
+<figure>
+	<center><img id="lowvoltagePDR3" src="EEG17_img/lowvoltagePDR3.png" width=1200px heigth=1000px>
+	<figcaption>Compare that with the posterior dominant rhythm of an adolescent: high-amplitude, well formed, good anterior-posterior gradient.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+<p>It can be because of thickening of the skull bone with age. The older the patient, the more likely it is to see this type of posterior dominant rhythm. It looks like the posterior dominant rhythm fades with age and ends up being a shadow of what it was during the younger years. That also happens to some people when they get older. In any case, it is completely normal, a normal variant.</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<form id="questiona1" name="questiona1">
+<p><b>Adults Q1. What normal variant do you seen in this EEG segment?</b></p>
+<figure>
+	<img id="QA1_1" src="EEG17_img/AQ1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qa1" name="question" value="a"> Wicket spikes<br>
+<input type="radio" id="qa1" name="question" value="b"> Mu rhythm<br>
+<input type="radio" id="qa1" name="question" value="c"> 14 and 6<br>
+<input type="radio" id="qa1" name="question" value="d"> Small sharp spikes<br>
+<input type="radio" id="qa1" name="question" value="e"> Phantom spike-wave complexes<br>
+<input id="buttonQA1" type="button" value="Done!" onclick="checkQA1();">
+</form>
+
+<div id="after_submitQA1">
+<p id="answerQA1"></p>
+<br>
+<figure>
+<img id="answerQA1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQA1_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQA1_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQA1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2>Young people get away with this! (normal variants in the young)</h2>
+<p>Young people get away with many things. Let's see what "funny looking" elements in their EEG they get away with.</p>
+
+
+<br>
+<br>
+
+
+
+<form id="questiony1" name="questiony1">
+<p><b>Young Q1. What normal variant do you seen in this EEG segment?</b></p>
+<figure>
+	<img id="QY1_1" src="EEG17_img/YQ1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy1" name="question" value="a"> Wicket spikes<br>
+<input type="radio" id="qy1" name="question" value="b"> Mu rhythm<br>
+<input type="radio" id="qy1" name="question" value="c"> 14 and 6<br>
+<input type="radio" id="qy1" name="question" value="d"> Small sharp spikes<br>
+<input id="buttonQY1" type="button" value="Done!" onclick="checkQY1();">
+</form>
+
+<div id="after_submitQY1">
+<p id="answerQY1"></p>
+<br>
+<figure>
+<img id="answerQY1_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<p>Now it is a good time to emphasize a couple of crucial concepts in differentiating normal variants from epileptiform activity:</p>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="doesnotbreaktherhythm1" src="EEG17_img/doesnotbreaktherhythm1.png" width=1200px heigth=1000px>
+	<figcaption>If you find the element marked by the red arrow while reading an EEG you might think "it is spiky, it has an electrical field, and it stands out from the rest of the EEG: it must be a spike!".</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="doesnotbreaktherhythm2" src="EEG17_img/doesnotbreaktherhythm2.png" width=1200px heigth=1000px>
+	<figcaption>But if you pay attention of what comes next, you realize that the next element is identical and appears very shortly after the first spiky element.</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="doesnotbreaktherhythm3" src="EEG17_img/doesnotbreaktherhythm3.png" width=1200px heigth=1000px>
+	<figcaption>And there is another very similar element right away. Then, you might think "this is not breaking the rhythm".</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="doesnotbreaktherhythm4" src="EEG17_img/doesnotbreaktherhythm4.png" width=1200px heigth=1000px>
+	<figcaption>And you would be exactly right because these spiky elements are not breaking the rhythm, they are part of the background rhythms and, in particular, this rhythm is a mu rhythm. Their frequency in this case is around 6 Hz, typically too high for epileptiform discharges. This is relatively easy to recognize when the mu rhythm appears in bursts or trains like in this EEG segment...</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<figure>
+	<center><img id="doesnotbreaktherhythm5" src="EEG17_img/doesnotbreaktherhythm5.png" width=1200px heigth=1000px>
+	<figcaption>...but when the mu rhythm appears as a single or few scattered spiky elements like in this EEG segment, it can easily be confused with a spike. In these cases, look for other parts of the same EEG and if you see the same kind of element appearing in trains, then you can be more sure that it is all just the mu rhythm (a normal variant).</figcaption></center>
+</figure>
+
+
+<br>
+<br>
+
+
+<p>Remember: if something does not break the rhythm it is most likely not an epileptiform discharge. Also, if an element appears with a rhythm of 6 Hz or higher, it is most likely a normal variant.</p>
+
+
+<br>
+<br>
+
+
+<form id="questiony2" name="questiony2">
+<p><b>Young Q2. What normal variant do you seen in this EEG segment?</b></p>
+<figure>
+	<img id="QY2_1" src="EEG17_img/YQ2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy2" name="question" value="a"> Wicket spikes<br>
+<input type="radio" id="qy2" name="question" value="b"> Breach rhythm<br>
+<input type="radio" id="qy2" name="question" value="c"> 14 and 6<br>
+<input type="radio" id="qy2" name="question" value="d"> Small sharp spikes<br>
+<input type="radio" id="qy2" name="question" value="e"> Phantom spike-wave complexes<br>
+<input type="radio" id="qy2" name="question" value="f"> Lambda waves<br>
+<input id="buttonQY2" type="button" value="Done!" onclick="checkQY2();">
+</form>
+
+<div id="after_submitQY2">
+<p id="answerQY2"></p>
+<br>
+<figure>
+<img id="answerQY2_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQY2_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQY2_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="questiony3" name="questiony3">
+<p><b>Young Q3. What normal variant do you seen in this EEG segment?</b></p>
+<figure>
+	<img id="QY3_1" src="EEG17_img/YQ3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy3" name="question" value="a"> Wicket spikes<br>
+<input type="radio" id="qy3" name="question" value="b"> Breach rhythm<br>
+<input type="radio" id="qy3" name="question" value="c"> 14 and 6<br>
+<input type="radio" id="qy3" name="question" value="d"> Small sharp spikes<br>
+<input type="radio" id="qy3" name="question" value="e"> Posterior slow waves of youth<br>
+<input type="radio" id="qy3" name="question" value="f"> Lambda waves<br>
+<input id="buttonQY3" type="button" value="Done!" onclick="checkQY3();">
+</form>
+
+<div id="after_submitQY3">
+<p id="answerQY3"></p>
+<br>
+<figure>
+<img id="answerQY3_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQY3_picture2">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQY3_picture3">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY3_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+<form id="questiony4" name="questiony4">
+<p><b>Young Q4. What normal variant do you seen in this EEG segment?</b></p>
+<figure>
+	<img id="QY4_1" src="EEG17_img/YQ4.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy4" name="question" value="a"> Wicket spikes<br>
+<input type="radio" id="qy4" name="question" value="b"> Breach rhythm<br>
+<input type="radio" id="qy4" name="question" value="c"> 14 and 6<br>
+<input type="radio" id="qy4" name="question" value="d"> Small sharp spikes<br>
+<input type="radio" id="qy4" name="question" value="e"> Posterior slow waves of youth<br>
+<input type="radio" id="qy4" name="question" value="f"> Lambda waves<br>
+<input id="buttonQY4" type="button" value="Done!" onclick="checkQY4();">
+</form>
+
+<div id="after_submitQY4">
+<p id="answerQY4"></p>
+<br>
+<figure>
+<img id="answerQY4_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY4_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<form id="questiony5" name="questiony5">
+<p><b>Young Q5. What normal variant do you seen in this EEG segment?</b></p>
+<figure>
+	<img id="QY5_1" src="EEG17_img/YQ5.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy5" name="question" value="a"> Wicket spikes<br>
+<input type="radio" id="qy5" name="question" value="b"> Breach rhythm<br>
+<input type="radio" id="qy5" name="question" value="c"> Spiky posterior dominant rhythm<br>
+<input type="radio" id="qy5" name="question" value="d"> Small sharp spikes<br>
+<input type="radio" id="qy5" name="question" value="e"> Posterior slow waves of youth<br>
+<input type="radio" id="qy5" name="question" value="f"> Lambda waves<br>
+<input id="buttonQY5" type="button" value="Done!" onclick="checkQY5();">
+</form>
+
+<div id="after_submitQY5">
+<p id="answerQY5"></p>
+<br>
+<figure>
+<img id="answerQY5_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQY5_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY5_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="questiony6" name="questiony6">
+<p><b>Young Q6. What normal variant do you seen in this EEG segment?</b></p>
+<figure>
+	<img id="QY6_1" src="EEG17_img/YQ6.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qy6" name="question" value="a"> Wicket spikes<br>
+<input type="radio" id="qy6" name="question" value="b"> POSTS<br>
+<input type="radio" id="qy6" name="question" value="c"> Spiky posterior dominant rhythm<br>
+<input type="radio" id="qy6" name="question" value="d"> Small sharp spikes<br>
+<input type="radio" id="qy6" name="question" value="e"> Posterior slow waves of youth<br>
+<input type="radio" id="qy6" name="question" value="f"> Lambda waves<br>
+<input id="buttonQY6" type="button" value="Done!" onclick="checkQY6();">
+</form>
+
+<div id="after_submitQY6">
+<p id="answerQY6"></p>
+<br>
+<figure>
+<img id="answerQY6_picture">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQY6_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+
+<h2>Children get away with this! (normal variants in children)</h2>
+<p>Children can get away with many things on their EEG which look very abnormal, but they are completely normal.</p>
+
+
+<br>
+<br>
+
+<form id="questionc1" name="questionc1">
+<p><b>Children Q1. What normal variant do you seen in this EEG segment?</b></p>
+<figure>
+	<img id="QC1_1" src="EEG17_img/CQ1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qc1" name="question" value="a"> Spiky posterior dominant rhythm<br>
+<input type="radio" id="qc1" name="question" value="b"> Prominent hyperventilation response<br>
+<input type="radio" id="qc1" name="question" value="c"> 14 and 6<br>
+<input type="radio" id="qc1" name="question" value="d"> Small sharp spikes<br>
+<input type="radio" id="qc1" name="question" value="e"> Spindle fragments<br>
+<input id="buttonQC1" type="button" value="Done!" onclick="checkQC1();">
+</form>
+
+<div id="after_submitQC1">
+<p id="answerQC1"></p>
+<br>
+<figure>
+<img id="answerQC1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQC1_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQC1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<form id="questionc2" name="questionc2">
+<p><b>Children Q2. What normal variant do you seen in this EEG segment?</b></p>
+<figure>
+	<img id="QC2_1" src="EEG17_img/CQ2.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qc2" name="question" value="a"> Extreme spindles<br>
+<input type="radio" id="qc2" name="question" value="b"> Prominent hyperventilation response<br>
+<input type="radio" id="qc2" name="question" value="c"> These are runs of sharp waves, not a normal variant<br>
+<input type="radio" id="qc2" name="question" value="d"> Mu rhythm<br>
+<input type="radio" id="qc2" name="question" value="e"> Cascading vertex waves<br>
+<input id="buttonQC2" type="button" value="Done!" onclick="checkQC2();">
+</form>
+
+<div id="after_submitQC2">
+<p id="answerQC2"></p>
+<br>
+<figure>
+<img id="answerQC2_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQC2_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQC2_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form id="questionc3" name="questionc3">
+<p><b>Children Q3. What normal variant do you seen in this EEG segment?</b></p>
+<figure>
+	<img id="QC3_1" src="EEG17_img/CQ3.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qc3" name="question" value="a"> Extreme spindles<br>
+<input type="radio" id="qc3" name="question" value="b"> POSTS<br>
+<input type="radio" id="qc3" name="question" value="c"> These are sharp waves, not a normal variant<br>
+<input type="radio" id="qc3" name="question" value="d"> Lambda waves<br>
+<input type="radio" id="qc3" name="question" value="e"> Wicket spikes<br>
+<input id="buttonQC3" type="button" value="Done!" onclick="checkQC3();">
+</form>
+
+<div id="after_submitQC3">
+<p id="answerQC3"></p>
+<br>
+<br clear="all" />
+<br>
+<p id = "afterQC3_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<br>
+<br>
+
+
+<h2>Babies get away with this! (normal variants in newborns)</h2>
+<p>Babies get away with a lot. Their EEG is fundamentally different than the EEG at later ages.</p>
+
+
+<br>
+<br>
+
+<form id="questionn1" name="questionn1">
+<p><b>Newborns Q1. What is highlighted in the red circle in this EEG segment?</b></p>
+<figure>
+	<img id="QN1_1" src="EEG17_img/NQ1.1.png">
+</figure>
+<br clear="all" />
+<br>
+<input type="radio" id="qn1" name="question" value="a"> Eyelid blink artifact<br>
+<input type="radio" id="qn1" name="question" value="b"> Encoches frontales<br>
+<input type="radio" id="qn1" name="question" value="c"> 14 and 6<br>
+<input type="radio" id="qn1" name="question" value="d"> A spike-wave complex<br>
+<input type="radio" id="qn1" name="question" value="e"> Lambda waves<br>
+<input id="buttonQN1" type="button" value="Done!" onclick="checkQN1();">
+</form>
+
+<div id="after_submitQN1">
+<p id="answerQN1"></p>
+<br>
+<figure>
+<img id="answerQN1_picture">
+</figure>
+<br clear="all" />
+<br>
+<figure>
+<img id="answerQN1_picture2">
+</figure>
+<br clear="all" />
+<br>
+<p id = "afterQN1_picture"></p>
+</div>
+<br clear="all" />
+
+<br>
+<br>
+<br>
+<br>
+
+
+<p>The EEG in newborns does not have most of the normal features of EEG in older ages (posterior dominant rhythm, vertex waves, sleep spindles), some features are normal but would be very abnormal in EEGs from older people (discontinuity, sharp transients), and the normal variants vary widely within few weeks of gestational age. Neonatal EEG is a completely different (and complex) topic which deserves its own space.</p>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2><b>SUMMARY</b></h2>
+<p><b>Normal variants: weird-looking, but normal.</b></p>
+
+<p><b>The normal variants above are the most frequent ones and you might want to learn them to not overcall them as abnormal.<br><br>Apart from that, there are general rules that will help you identify them: 1) if they have always the same appearance (monomorphic) they are probably a normal variant; 2) if they are not potentiated by stage II sleep, they are probably a normal variant; 3) if they do not break the rhythm, they are probably a normal variant; and 4) if they appear in runs or trains with a frequency of 6 Hz or higher, they are probably a normal variant. Extra tip: if they appear isolated, but their morphology is the same than when they appear in runs or trains in the same EEG, then the isolated element is probably a normal variant.<br><br>Let's keep learning!</b></p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+
+</html>
