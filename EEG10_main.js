@@ -80,6 +80,35 @@ function checkQ3() {
 
 
 
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "e" && document.CC1.CC1q2.value == "c" && document.CC1.CC1q3.value == "b" && document.CC1.CC1q4.value == "d") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "Correct!! <br><br>The EEG shows left centrotemporal sharp waves with a classic triphasic morphology (three phases). These sharp waves in the centrotemporal regions are typical of childhood epilepsy with centrotemporal spikes. Childhood epilepsy with centrotemporal spikes is the most common epileptic syndrome in childhood, so it is good to be familiar with it.<br><br>On EEG, the sharp waves are typically centrotemporal and they can be bilateral synchronous (right and left at the same time), bilateral asynchronous (right and left at different times), or more rarely, unilateral (only right or only left sharp waves). Epileptiform discharges in childhood epilepsy with centrotemporal spikes is typically sleep potentiated.<br><br>The typical seizure semiology of childhood epilepsy with centrotemporal spikes is that of a child who wakes up at night with one side of the face twitching. The child may make gurgling noises because the throat may also be twitching and the child is trying to speak without being able to. Sometimes, it evolves causing convulsions in one side of the body or even both sides. The seizure semiology explained by this family is generally consistent with the findings on the EEG (remember that what the family describes is not necessarily perfectly accurate, but the description is grossly consistent with the typical semiology, maybe the eye deviation is not as typical, but it can happen).<br><br>It is extremely important to ask the question: are the findings on EEG the findings that are typically found in patients with that seizure semiology? Abnormalities on EEG may be an incidental finding that does not really explain the event and just misdirects in the wrong direction. This is particularly true of centrotemporal spikes, which are so common in childhood (<a href='https://pubmed.ncbi.nlm.nih.gov/17638587/' target='_blank'>1%</a>-<a href='https://pubmed.ncbi.nlm.nih.gov/6766393/' target='_blank'>3%</a> of the general population) which may be found as an incidental finding.<br><br><a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>One unprovoked seizure and epileptiform discharges consistent with the seizure semiology are enough to diagnose epilepsy</a>. Childhood epilepsy with centrotemporal spikes typically has infrequent seizures and resolves with age. Therefore, many times families decide even not to treat with any antiseizure medication.<br><br>Importantly, when epileptiform discharges are exclusively unilateral you should think that this may be a focal structural epilepsy mimicking childhood epilepsy with centrotemporal spikes. You should recommend a brain MRI to evaluate for a structural lesion in the left centrotemporal region. This is especially true when the patient has also focal slowing in the same area. This patient, apart from the epileptiform discharges, has left centrotemporal delta slowing, suggesting a functional or structural lesion in that area. Do a brain MRI to evaluate for a structural lesion in the left centrotemporal region.";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("answerCC1_picture").src = "EEG10_img/CC1.5.png";
+		document.getElementById("answerCC1_picture2").src = "EEG10_img/CC1.6.png";
+		document.getElementById("afterCC1_picture").innerHTML = "Great job!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "No! <br><br>Look well at the EEG. Is there anything else other than epileptiform discharges?";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("answerCC1_picture").src = "EEG10_img/CC1.5.png";
+		document.getElementById("answerCC1_picture2").src = "EEG10_img/CC1.6.png";
+		document.getElementById("afterCC1_picture").innerHTML = "Try again!";
+
+}
+
+}
+
+
+
+
+
+
+
+
 function checkQ4() {
 
 	if (document.getElementById("q4a").checked == false && document.getElementById("q4b").checked == true && document.getElementById("q4c").checked == false && document.getElementById("q4d").checked == true && document.getElementById("q4e").checked == false && document.getElementById("q4f").checked == true) {
