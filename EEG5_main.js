@@ -57,7 +57,7 @@ function checkQ3() {
 
 	if (document.question3.question.value == "d") {
 		document.getElementById("after_submitQ3").style.visibility = "visible";
-		document.getElementById("answerQ3").innerHTML = "Correct!! <br><br> 'Sharp' or 'sharps' are not appropriate EEG terms. They can refer to any of the above EEG elements presented in the answers and some more. Is your colleague referring to a sharp transient? To a sharp wave? To sharply contoured slowing? Who knows? Will a colleague from another hospital understand the same concept than your colleague is trying to convey? <br><br>Use unclear and non-standard terminology at your own risk (and more importantly, at the risk of your patients).<br><br> Better still, use standard non-ambiguous terminology that everybody will understand.";
+		document.getElementById("answerQ3").innerHTML = "Correct!! <br><br> 'Sharp' or 'sharps' are not appropriate EEG terms. They can refer to any of the above EEG elements presented in the answers and some more. Is your colleague referring to a sharp transient? To a sharp wave? To sharply contoured slowing? Who knows? Will a colleague from another hospital understand the same concept than your colleague is trying to convey? <br><br>Use unclear and non-standard terminology at your own risk (and more importantly, at the risk of your patients).<br><br> Better still, use <a href='https://pubmed.ncbi.nlm.nih.gov/30214992/' target='_blank'>standard non-ambiguous terminology that everybody will understand</a>.";
 		document.getElementById("after_submitQ3").style.background = "lightgreen";
 		document.getElementById("afterQ3_picture").innerHTML = "<br><br> Great job!";
 
@@ -66,6 +66,35 @@ function checkQ3() {
 		document.getElementById("answerQ3").innerHTML = "No.<br><br> Why do you think that is the correct answer? Can you find the definition of a 'sharp'?";
 		document.getElementById("after_submitQ3").style.background = "red";
 		document.getElementById("afterQ3_picture").innerHTML = "<br><br> Try again!";
+
+}
+
+}
+
+
+
+
+
+
+
+
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "a" && document.CC1.CC1q2.value == "c" && document.CC1.CC1q3.value == "e") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "Yes!! <br><br>The EEG shows diffuse spike-wave complexes at an approximate frequency of 1-2.5 Hz. It has to be said that this example does not have the best morphology for spike-wave complexes, but among the options provided, slow spike-wave complexes is the best fit.<br><br>The last 2 segments of EEG show an abrupt change in the EEG pattern with diffuse voltage attenuation and superimposed fast activity. This is the hallmark of generalized tonic seizures.";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("answerCC1_picture").src = "EEG5_img/CC1.6.png";
+		document.getElementById("answerCC1_picture2").src = "EEG5_img/CC1.7.png";
+		document.getElementById("afterCC1_picture").innerHTML = "The combination of diffuse slow (1-2.5 Hz) spike-waves complexes in the background and generalized tonic seizures is very suggestive of <a href='https://pubmed.ncbi.nlm.nih.gov/19081517/' target='_blank'>Lennox-Gastaut syndrome</a>, one of the most common epileptic encephalopathies in children.<br><br>Great job!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "No! <br><br>Look well at the EEG and the portions whithin the red rectangles";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("answerCC1_picture").src = "EEG5_img/CC1.6.png";
+		document.getElementById("answerCC1_picture2").src = "EEG5_img/CC1.7.png";
+		document.getElementById("afterCC1_picture").innerHTML = "Try again!";
 
 }
 
