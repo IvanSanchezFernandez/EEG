@@ -118,3 +118,25 @@ function checkQ5() {
 
 }
 
+
+
+
+
+
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "e" && document.CC1.CC1q2.value == "c" && document.CC1.CC1q3.value == "b") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "Yes!! <br><br>The EEG shows right and left triphasic centrotemporal sharp waves, which are more prominent in sleep (sleep potentiated). This pattern is typical for childhood epilepsy with centrotemporal spikes (formerly known as Rolandic epilepsy).<br><br>This is the most common type of epilepsy in children and it is associated with seizures in which the child wakes up at night with hemifacial clonic movements and difficulty speaking even if the child is awake. Sometimes, these seizures can spread to cause focal clonic seizures in one side of the body or generalized clonic seizures.<br><br>The episodes under question in this patient are typical for a parasomnia (probably sleep walking or sleep talking). The suspicion for seizures is very low.<br><br><a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>Epilepsy is a clinical diagnosis</a>. To make a diagnosis of epilepsy you have to have at least 2 unprovoked seizures separated by more than 24 hours. Another option to make the diagnosis of epilepsy is to have 1 unprovoked seizure and a subsequent probability of unprovoked seizures of 60% or higher. When a patient has an unprovoked seizure, an EEG with epileptiform activity consistent with the type of seizure the patient is presenting makes a diagnosis of epilepsy because the probability of subsequent unprovoked seizures is more than 60%.<br><br>In our patient, the episodes are most likely parasomnias. They could potentially be frontal lobe seizures because frontal lobe seizures can present with complex motor phenomena at night. The EEG was performed to evaluate the possibility of frontal lobe seizures. The epileptiform activity in the EEG is not consistent with frontal lobe seizures. Based on the clinical presentation and EEG features, this patient does not have epilepsy.<br><br>Why is there epileptiform activity then? Approximately 1%-2% of the population has epileptiform activity and never develop epilepsy as explained in <a href='https://pubmed.ncbi.nlm.nih.gov/17638587/' target='_blank'>this article</a> and <a href='https://pubmed.ncbi.nlm.nih.gov/20634716/' target='_blank'>this article</a>. Remember, epilepsy is a clinical diagnosis. Epileptiform activity in the EEG is just the result of a test which needs to be interpreted in the specific clinical scenario.";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("afterCC1_picture").innerHTML = "Great job!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "No! <br><br>How do you diagnose epilepsy? <a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>Epilepsy is a clinical diagnosis</a>.";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("afterCC1_picture").innerHTML = "Try again!";
+
+}
+
+}
