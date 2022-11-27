@@ -116,6 +116,22 @@ function checkQ4() {
 
 
 
+function checkCC1() {
 
+	if (document.CC1.CC1q1.value == "c" && document.CC1.CC1q2.value == "e" && document.CC1.CC1q3.value == "b") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "Yes!! <br><br>The EEG shows frequent periods in which the voltage is zero or close to zero and there appears to be no brain activity.<br><br>This is called discontinuity: the brain activity is not always appearing continuously as it should, but comes and goes.<br><br>Discontinuity is an unspecific marker of moderate to severe encephalopathy of non-specific etiology which can be caused by traumatic brain injury, toxic-metabolic causes, medications, etc.<br><br>Discontinuity is never normal and in general it is a bad prognostic sign. However, if toxics or medications are the only cause for the discontinuity on EEG, as the toxic or medication decreases its concentration, the EEG can progressively become more continuous.";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("afterCC1_picture").innerHTML = "Great job!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "No!";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("afterCC1_picture").innerHTML = "Try again!";
+
+}
+
+}
 
 
