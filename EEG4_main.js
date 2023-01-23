@@ -23,3 +23,31 @@ function checkQ1() {
 }
 
 
+
+
+
+
+
+
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "a" && document.CC1.CC1q2.value == "c" && document.CC1.CC1q3.value == "b" && document.CC1.CC1q4.value == "b") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "Yes!! <br><br>The EEG segments belong to wakefulness because they have muscle artifact, eyelid blinking artifact, and a posterior dominant rhythm.<br><br><a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>Epilepsy is a clinical diagnosis</a>. To make a diagnosis of epilepsy you have to have at least 2 unprovoked seizures separated by more than 24 hours. Another option to make the diagnosis of epilepsy is to have 1 unprovoked seizure and a subsequent probability of unprovoked seizures of 60% or higher. When a patient has an unprovoked seizure, an EEG with epileptiform activity consistent with the type of seizure the patient is presenting makes a diagnosis of epilepsy because the probability of subsequent unprovoked seizures is more than 60%.<br><br>Many patients with epilepsy have normal EEGs. Epilepsy is a clinical diagnosis. Let's repeat it again. Epilepsy is a clinical diagnosis.<br><br>Some elements in the posterior dominant rhythm appear somewhat sharply contoured, but they do not have a field, and do not break the rhythm (their rhythm is kind of predictable as shown below). They are not epileptiform discharges.";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+                document.getElementById("answerCC1_picture").src = "EEG4_img/CC1.3.png";
+		document.getElementById("answerCC1_picture2").src = "EEG4_img/CC1.4.png";
+		document.getElementById("afterCC1_picture").innerHTML = "And the patient? Does this patient have epilepsy? It depends on the rest of the clinical history. We would need more details of the episodes to know if he has epilepsy or not.<br><br>Great job!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "No! <br><br>How do you diagnose epilepsy? <a href='https://pubmed.ncbi.nlm.nih.gov/24730690/' target='_blank'>Epilepsy is a clinical diagnosis</a>.<br><br>Do you see any elements which break the rhythm here?";
+		document.getElementById("after_submitCC1").style.background = "red";
+                document.getElementById("answerCC1_picture").src = "EEG4_img/CC1.3.png";
+		document.getElementById("answerCC1_picture2").src = "EEG4_img/CC1.4.png";
+		document.getElementById("afterCC1_picture").innerHTML = "Try again!";
+
+}
+
+}
+
