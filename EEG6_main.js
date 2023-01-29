@@ -106,3 +106,39 @@ function checkQ4() {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "b" && document.CC1.CC1q2.value == "d") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "Correct!!<br><br>This segment of EEG is recorded during sleep. The sharply-contoured elements point down on a referential montage, so they are positive in the surface of the scalp.<br><br>Epileptiform discharges are generally surface negative. The presence of surface positive discharges should make you think of something different than epileptiform discharges.<br><br>Another rule of thumb is that if the frequency of a discharge is 6 Hz or more and does not evolve, it is probably some form of normal variant.<br><br>In particular, the elements in this case are 14 and 6, a normal variant characterized for a posterior temporal maximum, a small-amplitude sharply-contoured morphology, and a frequency of either 14 Hz or 6 Hz.<br><br>Another example of 14 and 6 is presented below:";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("answerCC1_picture").src = "EEG6_img/CC1.3.png";
+		document.getElementById("answerCC1_picture2").src = "EEG6_img/CC1.4.png";
+		document.getElementById("afterCC1_picture").innerHTML = "Unfortunately, many times 14 and 6 are misclassified as epileptiform discharges and the patients are incorrectly treated with antiseizure medications.<br><br>A large part of becoming a good EEG reader is to recognize normal variants.<br><br>Great job!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "No! <br><br>Another example of the same pattern is presented below:";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("answerCC1_picture").src = "EEG6_img/CC1.3.png";
+		document.getElementById("answerCC1_picture2").src = "EEG6_img/CC1.4.png";
+		document.getElementById("afterCC1_picture").innerHTML = "Try again!";
+
+}
+
+}
+
