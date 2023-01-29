@@ -135,3 +135,29 @@ function checkCC1() {
 }
 
 
+
+
+
+
+
+
+function checkCC2() {
+
+	if (document.CC2.CC2q1.value == "c" && document.CC2.CC2q2.value == "a") {
+		document.getElementById("after_submitCC2").style.visibility = "visible";
+		document.getElementById("answerCC2").innerHTML = "Correct!! <br><br>This segment of EEG shows sleep at the beginning (do you see the sleep spindles?), then a period of a mixture of different frequencies, some of them of high amplitude, and finally, muscle artifact. This represents a transition from sleep to wakefulness and the burst of different frequencies is called hypnopompic hypersynchrony.<br><br>In children, hypnopompic hypersynchronies (transitions from sleep to wakefulness) and hypnagogic hypersynchrnonies (transitions from wakefulness to sleep) can appear very intimidating with a mixture of different elements and high-amplitude waves. They are completely normal, however.<br><br>Another example of normal hypnopompic hypersynchrony is presented below:";
+		document.getElementById("after_submitCC2").style.background = "lightgreen";
+		document.getElementById("answerCC2_picture").src = "EEG3_img/CC2.2.png";
+		document.getElementById("afterCC2_picture").innerHTML = "Great job!";
+
+}	else {
+		document.getElementById("after_submitCC2").style.visibility = "visible";
+		document.getElementById("answerCC2").innerHTML = "No! <br><br>Another example of the same pattern is presented below:";
+		document.getElementById("after_submitCC2").style.background = "red";
+		document.getElementById("answerCC2_picture").src = "EEG3_img/CC2.2.png";
+		document.getElementById("afterCC2_picture").innerHTML = "Try again!";
+
+}
+
+}
+
