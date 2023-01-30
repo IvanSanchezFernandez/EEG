@@ -210,3 +210,26 @@ function checkQ7() {
 
 
 
+
+
+
+
+
+function checkCC2() {
+
+	if (document.CC2.CC2q1.value == "a" && document.CC2.CC2q2.value == "b") {
+		document.getElementById("after_submitCC2").style.visibility = "visible";
+		document.getElementById("answerCC2").innerHTML = "Correct!!<br><br>This segment of EEG shows sharply-contoured elements in the temporal lobe (in the left temporal lobe in the first EEG segment and in the right temporal lobe in the second EEG segment). The morphology is not typical of sharp waves and it does not break the rhythm. It is actually a rhythm of 6 Hz or more which does not evolve, which is most consistent with some form of normal variant. Most likely this pattern represents either wicket spikes (a normal variant) or rhythmic temporal theta bursts (another rhythmic variant).<br><br>The semiology of seeing simple shapes and patches of color is typical of occipital seizures but also of migraine. When temporal lobe seizures have visual phenomena, they are typically more ellaborate shapes.";
+		document.getElementById("after_submitCC2").style.background = "lightgreen";
+		document.getElementById("afterCC2_picture").innerHTML = "Great job!";
+
+}	else {
+		document.getElementById("after_submitCC2").style.visibility = "visible";
+		document.getElementById("answerCC2").innerHTML = "No!";
+		document.getElementById("after_submitCC2").style.background = "red";
+		document.getElementById("afterCC2_picture").innerHTML = "Try again!";
+
+}
+
+}
+
