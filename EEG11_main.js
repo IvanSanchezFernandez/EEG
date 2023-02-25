@@ -88,3 +88,29 @@ function checkQ3() {
 
 
 
+
+
+
+
+
+function checkCC1() {
+
+	if (document.CC1.CC1q1.value == "e" && document.CC1.CC1q2.value == "c") {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "Correct!! <br><br>Many seizures do not neatly fit into one of the classic textbook categories (typical absence seizures, seizures with fast polyspikes, or focal seizures with evolution in frequency and amplitude).<br><br>The first three EEG segments show irregular 2.5 Hz to 3 Hz spike-wave complexes with evolution in frequency and amplitude and progressive petering out as diffuse slow waves. In this patient, these seizures had a clinical presentation of staring and whole body stiffening.<br><br>The last two EEG segments show a burst of bifrontal-predominant generalized spike-wave complexes. In this patient, these seizures had a clinical presentation of whole body jerk, similar to a myoclonic seizure.";
+		document.getElementById("after_submitCC1").style.background = "lightgreen";
+		document.getElementById("afterCC1_picture").innerHTML = "Great job!";
+
+}	else {
+		document.getElementById("after_submitCC1").style.visibility = "visible";
+		document.getElementById("answerCC1").innerHTML = "No!";
+		document.getElementById("after_submitCC1").style.background = "red";
+		document.getElementById("afterCC1_picture").innerHTML = "Try again!";
+
+}
+
+}
+
+
+
+
